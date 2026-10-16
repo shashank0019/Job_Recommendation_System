@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "company": "Google",
+    "position": "Software Engineer",
+    "interviewer": "Senior Engineer",
+    "experience_text": "The interview consisted of 3 rounds: coding challenge, system design, and behavioral questions. The coding questions were medium difficulty involving data structures and algorithms. Very friendly team and good experience overall.",
+    "difficulty_rating": "Hard",
+    "outcome": "Selected",
+    "interview_type": "Technical",
+    "interview_rounds": 3,
+    "preparation_time": "2 weeks",
+    "location": "Mountain View, CA",
+    "questions_asked": [
+      "Implement a binary tree",
+      "Design a URL shortener",
+      "Tell me about a challenging project"
+    ],
+    "tags": [
+      "algorithms",
+      "system-design",
+      "behavioral"
+    ],
+    "date": "2025-10-15T10:00:00",
+    "created_at": "2025-10-16T09:30:00",
+    "status": "published"
+  },
+  {
+    "id": 2,
+    "company": "Microsoft",
+    "position": "Frontend Developer",
+    "interviewer": "Tech Lead",
+    "experience_text": "Great interview experience! Started with technical discussion about React and JavaScript fundamentals. Then had a live coding session building a small component. The interviewer was very helpful and provided hints when needed.",
+    "difficulty_rating": "Medium",
+    "outcome": "Selected",
+    "interview_type": "Technical",
+    "interview_rounds": 2,
+    "preparation_time": "1 week",
+    "location": "Seattle, WA",
+    "questions_asked": [
+      "What is virtual DOM?",
+      "Build a todo component",
+      "How do you handle state management?"
+    ],
+    "tags": [
+      "react",
+      "javascript",
+      "frontend",
+      "live-coding"
+    ],
+    "date": "2025-10-20T14:00:00",
+    "created_at": "2025-10-21T11:15:00",
+    "status": "published"
+  },
+  {
+    "id": 3,
+    "company": "Amazon",
+    "position": "Data Scientist",
+    "interviewer": "Data Science Manager",
+    "experience_text": "Interview focused heavily on statistics, machine learning concepts, and Python programming. Had to solve a real-world data problem and explain the approach. Questions about handling missing data and model evaluation were asked.",
+    "difficulty_rating": "Hard",
+    "outcome": "Rejected",
+    "interview_type": "Technical",
+    "interview_rounds": 4,
+    "preparation_time": "3 weeks",
+    "location": "Austin, TX",
+    "questions_asked": [
+      "Explain bias-variance tradeoff",
+      "How do you handle missing data?",
+      "Build a recommendation system"
+    ],
+    "tags": [
+      "python",
+      "machine-learning",
+      "statistics",
+      "data-analysis"
+    ],
+    "date": "2025-10-25T15:30:00",
+    "created_at": "2025-10-26T08:45:00",
+    "status": "published"
+  },
+  {
+    "id": 4,
+    "company": "Netflix",
+    "position": "DevOps Engineer",
+    "interviewer": "Senior DevOps Engineer",
+    "experience_text": "Interview covered cloud infrastructure, containerization with Docker/Kubernetes, and CI/CD pipelines. Had to design a deployment strategy for a microservices architecture. Very technical but engaging discussion.",
+    "difficulty_rating": "Medium",
+    "outcome": "Selected",
+    "interview_type": "Technical",
+    "interview_rounds": 3,
+    "preparation_time": "2 weeks",
+    "location": "Los Angeles, CA",
+    "questions_asked": [
+      "Design a CI/CD pipeline",
+      "How do you monitor microservices?",
+      "Explain container orchestration"
+    ],
+    "tags": [
+      "devops",
+      "kubernetes",
+      "docker",
+      "aws",
+      "microservices"
+    ],
+    "date": "2025-10-28T11:00:00",
+    "created_at": "2025-10-29T13:20:00",
+    "status": "published"
+  },
+  {
+    "id": 5,
+    "company": "Spotify",
+    "position": "Product Manager",
+    "interviewer": "VP of Product",
+    "experience_text": "Interview focused on product sense, analytical thinking, and leadership scenarios. Was asked to design a feature for music discovery and justify the decisions. Also discussed metrics and A/B testing strategies.",
+    "difficulty_rating": "Medium",
+    "outcome": "Pending",
+    "interview_type": "Product",
+    "interview_rounds": 2,
+    "preparation_time": "1 week",
+    "location": "Stockholm, Sweden",
+    "questions_asked": [
+      "Design a music discovery feature",
+      "How would you measure success?",
+      "Tell me about a product you improved"
+    ],
+    "tags": [
+      "product-management",
+      "analytics",
+      "feature-design",
+      "metrics"
+    ],
+    "date": "2025-11-01T09:00:00",
+    "created_at": "2025-11-01T16:30:00",
+    "status": "published"
+  },
+  {
+    "id": 6,
+    "company": "Samsung R&D",
+    "position": "Senior Developer",
+    "interviewer": "Technical Lead",
+    "experience_text": "Initial technical screening followed by coding challenges. Questions focused on React and Java development. Professional interview process.",
+    "difficulty_rating": "Medium",
+    "outcome": "Pending",
+    "interview_type": "Technical",
+    "interview_rounds": 2,
+    "preparation_time": "1 week",
+    "location": "Bengaluru, India",
+    "questions_asked": [
+      "React state management",
+      "Java OOP concepts",
+      "System design basics"
+    ],
+    "tags": [
+      "react",
+      "java"
+    ],
+    "date": "2025-11-01T15:25:53.591395",
+    "created_at": "2025-11-01T15:25:53.593462",
+    "status": "published"
+  }
+]

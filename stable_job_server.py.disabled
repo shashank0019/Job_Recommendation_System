@@ -1,0 +1,304 @@
+#!/usr/bin/env python3
+"""
+Stable Job Posting Server
+Designed to stay running and handle job posting operations reliably
+"""
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+import json
+import os
+import sys
+import signal
+import threading
+import time
+from datetime import datetime
+
+# Create Flask app
+app = Flask(__name__)
+
+# Configure CORS to allow frontend access
+CORS(app, resources={
+    r"/*": {
+        "origins": [
+            "http://localhost:5173", "http://127.0.0.1:5173", 
+            "http://localhost:5174", "http://127.0.0.1:5174", 
+            "http://localhost:3000", "http://127.0.0.1:3000"
+        ],
+        "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        "allow_headers": ["Content-Type", "Authorization", "Origin", "Accept"]
+    }
+})
+
+# Global variables
+JOBS = []
+JOBS_FILE = os.path.join('data', 'posted_jobs.json')
+server_running = True
+
+def load_jobs():
+    """Load jobs from JSON file"""
+    global JOBS
+    try:
+        if os.path.exists(JOBS_FILE):
+            with open(JOBS_FILE, 'r', encoding='utf-8') as f:
+                JOBS = json.load(f)
+                print(f"[INFO] Loaded {len(JOBS)} jobs from {JOBS_FILE}")
+                return True
+        else:
+            print(f"[WARNING] Jobs file {JOBS_FILE} not found, starting with empty list")
+            JOBS = []
+            return False
+    except Exception as e:
+        print(f"[ERROR] Failed to load jobs: {e}")
+        JOBS = []
+        return False
+
+def save_jobs():
+    """Save jobs to JSON file"""
+    try:
+        os.makedirs('data', exist_ok=True)
+        with open(JOBS_FILE, 'w', encoding='utf-8') as f:
+            json.dump(JOBS, f, indent=2, ensure_ascii=False)
+        return True
+    except Exception as e:
+        print(f"[ERROR] Failed to save jobs: {e}")
+        return False
+
+def get_next_job_id():
+    """Get the next available job ID"""
+    if not JOBS:
+        return 1
+    existing_ids = [job.get('id', 0) for job in JOBS if isinstance(job.get('id'), int)]
+    return max(existing_ids, default=0) + 1
+
+@app.route('/')
+def health_check():
+    """Health check endpoint"""
+    return jsonify({
+        'status': 'OK',
+        'message': 'Job Posting Server is running',
+        'total_jobs': len(JOBS),
+        'server_time': datetime.now().isoformat(),
+        'endpoints': {
+            'jobs': 'GET/POST /api/jobs',
+            'experiences': 'GET /api/experiences'
+        }
+    })
+
+@app.route('/api/jobs', methods=['GET', 'POST', 'OPTIONS'])
+def handle_jobs():
+    """Handle job-related requests"""
+    
+    if request.method == 'OPTIONS':
+        return jsonify({'status': 'OK'})
+    
+    elif request.method == 'GET':
+        try:
+            # Get pagination parameters
+            page = int(request.args.get('page', 1))
+            limit = int(request.args.get('limit', 20))
+            
+            # Calculate pagination
+            total = len(JOBS)
+            start_idx = (page - 1) * limit
+            end_idx = min(start_idx + limit, total)
+            
+            # Get jobs for this page
+            jobs_page = JOBS[start_idx:end_idx]
+            
+            print(f"[GET] /api/jobs - Page {page}, showing {len(jobs_page)} of {total} jobs")
+            
+            return jsonify({
+                'success': True,
+                'jobs': jobs_page,
+                'pagination': {
+                    'page': page,
+                    'limit': limit,
+                    'total': total,
+                    'pages': (total + limit - 1) // limit if total > 0 else 1
+                }
+            })
+            
+        except Exception as e:
+            print(f"[ERROR] GET /api/jobs failed: {e}")
+            return jsonify({
+                'success': False,
+                'error': f'Failed to fetch jobs: {str(e)}'
+            }), 500
+    
+    elif request.method == 'POST':
+        try:
+            data = request.get_json()
+            
+            if not data:
+                return jsonify({
+                    'success': False,
+                    'error': 'No data provided'
+                }), 400
+            
+            # Validate required fields
+            required_fields = ['title', 'company', 'description']
+            for field in required_fields:
+                if not data.get(field) or not str(data.get(field)).strip():
+                    return jsonify({
+                        'success': False,
+                        'error': f'Missing or empty required field: {field}'
+                    }), 400
+            
+            # Create new job posting
+            new_job = {
+                'id': get_next_job_id(),
+                'title': str(data.get('title')).strip(),
+                'company': str(data.get('company')).strip(),
+                'location': str(data.get('location', 'Not specified')).strip(),
+                'description': str(data.get('description')).strip(),
+                'requirements': data.get('requirements', []),
+                'salary': str(data.get('salary', 'Competitive')).strip(),
+                'type': str(data.get('type', 'Full-time')).strip(),
+                'posted_date': datetime.now().isoformat(),
+                'status': 'active'
+            }
+            
+            # Add to jobs list
+            JOBS.append(new_job)
+            
+            # Save to file
+            if save_jobs():
+                print(f"[POST] /api/jobs - New job created: '{new_job['title']}' at '{new_job['company']}' (ID: {new_job['id']})")
+                
+                return jsonify({
+                    'success': True,
+                    'job': new_job,
+                    'message': 'Job posted successfully',
+                    'total_jobs': len(JOBS)
+                })
+            else:
+                # Remove from memory if save failed
+                JOBS.pop()
+                return jsonify({
+                    'success': False,
+                    'error': 'Failed to save job to file'
+                }), 500
+            
+        except Exception as e:
+            print(f"[ERROR] POST /api/jobs failed: {e}")
+            return jsonify({
+                'success': False,
+                'error': f'Failed to create job: {str(e)}'
+            }), 500
+
+@app.route('/api/experiences', methods=['GET', 'OPTIONS'])
+def handle_experiences():
+    """Handle interview experiences requests"""
+    
+    if request.method == 'OPTIONS':
+        return jsonify({'status': 'OK'})
+    
+    try:
+        # Return sample experiences
+        experiences = [
+            {
+                'id': '1',
+                'company': 'TechCorp',
+                'role': 'Senior Software Engineer',
+                'difficulty': 'Medium',
+                'experience': 'Great technical interview focusing on system design and coding challenges. The team was professional and provided good feedback.',
+                'date': '2024-10-25',
+                'rating': 4,
+                'location': 'San Francisco, CA',
+                'tips': 'Practice system design and algorithms'
+            },
+            {
+                'id': '2',
+                'company': 'DataTech Solutions',
+                'role': 'Data Scientist',
+                'difficulty': 'Hard',
+                'experience': 'Comprehensive interview with statistics, machine learning, and real dataset analysis. Very thorough process.',
+                'date': '2024-10-20',
+                'rating': 5,
+                'location': 'New York, NY',
+                'tips': 'Strong statistics background essential'
+            },
+            {
+                'id': '3',
+                'company': 'WebSolutions Inc',
+                'role': 'Frontend Developer',
+                'difficulty': 'Easy',
+                'experience': 'Friendly interview with focus on React, CSS, and user experience. Portfolio review was important.',
+                'date': '2024-10-18',
+                'rating': 4,
+                'location': 'Remote',
+                'tips': 'Have a strong portfolio ready'
+            }
+        ]
+        
+        print(f"[GET] /api/experiences - Served {len(experiences)} experiences")
+        
+        return jsonify({
+            'success': True,
+            'experiences': experiences,
+            'total': len(experiences)
+        })
+        
+    except Exception as e:
+        print(f"[ERROR] GET /api/experiences failed: {e}")
+        return jsonify({
+            'success': False,
+            'error': f'Failed to fetch experiences: {str(e)}'
+        }), 500
+
+def signal_handler(signum, frame):
+    """Handle shutdown signals gracefully"""
+    global server_running
+    print(f"\n[INFO] Received signal {signum}, shutting down gracefully...")
+    server_running = False
+    save_jobs()
+    sys.exit(0)
+
+def heartbeat():
+    """Keep the server alive with periodic heartbeat"""
+    while server_running:
+        time.sleep(30)  # Heartbeat every 30 seconds
+        if server_running:
+            print(f"[HEARTBEAT] Server alive - {len(JOBS)} jobs available")
+
+if __name__ == '__main__':
+    # Set up signal handlers for graceful shutdown
+    signal.signal(signal.SIGINT, signal_handler)
+    signal.signal(signal.SIGTERM, signal_handler)
+    
+    print("=" * 50)
+    print("STABLE JOB POSTING SERVER")
+    print("=" * 50)
+    
+    # Load existing jobs
+    load_jobs()
+    
+    # Start heartbeat thread
+    heartbeat_thread = threading.Thread(target=heartbeat, daemon=True)
+    heartbeat_thread.start()
+    
+    print(f"[INFO] Server starting with {len(JOBS)} jobs loaded")
+    print("[INFO] Available endpoints:")
+    print("  GET / - Health check")
+    print("  GET/POST /api/jobs - Job operations")
+    print("  GET /api/experiences - Interview experiences")
+    print("[INFO] CORS enabled for frontend ports: 3000, 5173, 5174")
+    print("[INFO] Press Ctrl+C to stop server")
+    print("=" * 50)
+    
+    try:
+        # Run the Flask server
+        app.run(
+            host='127.0.0.1', 
+            port=5000, 
+            debug=False,
+            threaded=True,
+            use_reloader=False  # Disable reloader to prevent restart issues
+        )
+    except KeyboardInterrupt:
+        print("\n[INFO] Server stopped by user")
+        signal_handler(signal.SIGINT, None)
+    except Exception as e:
+        print(f"[ERROR] Server failed: {e}")
+        save_jobs()
+        sys.exit(1)

@@ -1,0 +1,12 @@
+# RapidAPI Configuration
+RAPIDAPI_KEY=your_rapidapi_key_here
+RAPIDAPI_HOST=jsearch.p.rapidapi.com
+
+# Flask Configuration
+FLASK_ENV=development
+FLASK_DEBUG=True
+
+# Model Configuration
+MODEL_PATH=data/trained_model.joblib
+VECTORIZER_PATH=data/tfidf_vectorizer.joblib
+CSV_DATA_PATH=data/job_dataset.csv 

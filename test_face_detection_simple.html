@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Face Detection Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #f0f0f0; }
+        .container { max-width: 800px; margin: 0 auto; background: white; padding: 20px; border-radius: 10px; }
+        video { width: 640px; height: 480px; border: 2px solid #ddd; }
+        canvas { border: 2px solid red; margin-left: 20px; }
+        .status { margin: 20px 0; padding: 15px; border-radius: 8px; font-weight: bold; }
+        .good { background: #d4edda; color: #155724; }
+        .warning { background: #fff3cd; color: #856404; }
+        .error { background: #f8d7da; color: #721c24; }
+        button { padding: 10px 20px; margin: 5px; border: none; border-radius: 5px; cursor: pointer; }
+        .btn-primary { background: #007bff; color: white; }
+        .btn-danger { background: #dc3545; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Simple Face Detection Test</h1>
+        
+        <div>
+            <button id="startBtn" class="btn-primary">📹 Start Camera & Detection</button>
+            <button id="stopBtn" class="btn-danger" disabled>⏹️ Stop</button>
+        </div>
+        
+        <div style="margin: 20px 0;">
+            <video id="video" autoplay muted playsinline></video>
+            <canvas id="canvas" width="320" height="240"></canvas>
+        </div>
+        
+        <div id="status" class="status">Click "Start Camera & Detection" to begin</div>
+        
+        <div id="log" style="background: #f8f9fa; padding: 15px; border-radius: 8px; max-height: 200px; overflow-y: auto;">
+            <strong>Detection Log:</strong><br>
+        </div>
+    </div>
+
+    <script>
+        let video, canvas, ctx;
+        let stream = null;
+        let detectionInterval = null;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            video = document.getElementById('video');
+            canvas = document.getElementById('canvas');
+            ctx = canvas.getContext('2d');
+            
+            document.getElementById('startBtn').addEventListener('click', startCameraAndDetection);
+            document.getElementById('stopBtn').addEventListener('click', stopEverything);
+        });
+
+        async function startCameraAndDetection() {
+            try {
+                updateStatus('Starting camera...', 'warning');
+                
+                stream = await navigator.mediaDevices.getUserMedia({ 
+                    video: { 
+                        width: { ideal: 640 },
+                        height: { ideal: 480 },
+                        facingMode: 'user'
+                    } 
+                });
+                
+                video.srcObject = stream;
+                
+                video.onloadedmetadata = () => {
+                    updateStatus('Camera active! Starting face detection...', 'good');
+                    
+                    document.getElementById('startBtn').disabled = true;
+                    document.getElementById('stopBtn').disabled = false;
+                    
+                    // Start detection immediately
+                    detectionInterval = setInterval(detectFaces, 1000);
+                    log('✅ Face detection started');
+                };
+                
+            } catch (error) {
+                updateStatus(`Camera error: ${error.message}`, 'error');
+                log(`❌ Camera error: ${error.message}`);
+            }
+        }
+
+        function stopEverything() {
+            if (stream) {
+                stream.getTracks().forEach(track => track.stop());
+                stream = null;
+            }
+            
+            if (detectionInterval) {
+                clearInterval(detectionInterval);
+                detectionInterval = null;
+            }
+            
+            video.srcObject = null;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            updateStatus('Stopped', 'warning');
+            
+            document.getElementById('startBtn').disabled = false;
+            document.getElementById('stopBtn').disabled = true;
+        }
+
+        function detectFaces() {
+            if (!video || video.videoWidth === 0) return;
+            
+            // Draw video frame to canvas
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+            
+            // Get image data
+            const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+            
+            // Simple face detection using skin color
+            const faces = detectFacesByColor(imageData, canvas.width, canvas.height);
+            
+            // Clear canvas and draw detection results
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+            
+            if (faces.length === 1) {
+                updateStatus(`✅ Face detected (confidence: ${Math.round(faces[0].confidence * 100)}%)`, 'good');
+                drawFaceBox(faces[0]);
+                log(`✅ Single face detected - confidence: ${Math.round(faces[0].confidence * 100)}%`);
+            } else if (faces.length > 1) {
+                updateStatus(`⚠️ Multiple faces detected (${faces.length})`, 'warning');
+                faces.forEach(face => drawFaceBox(face, '#ff0000'));
+                log(`⚠️ Multiple faces detected: ${faces.length}`);
+            } else {
+                updateStatus('❌ No face detected', 'error');
+                log('❌ No face detected');
+            }
+        }
+
+        function detectFacesByColor(imageData, width, height) {
+            const data = imageData.data;
+            const faces = [];
+            const skinRegions = [];
+            let skinPixels = 0;
+            
+            // Scan for skin-colored regions
+            for (let y = 0; y < height; y += 4) {
+                for (let x = 0; x < width; x += 4) {
+                    const i = (y * width + x) * 4;
+                    const r = data[i];
+                    const g = data[i + 1];
+                    const b = data[i + 2];
+                    
+                    if (isSkinColor(r, g, b)) {
+                        skinPixels++;
+                        skinRegions.push({ x, y });
+                    }
+                }
+            }
+            
+            // If we have enough skin pixels, assume there's a face
+            const skinThreshold = (width * height) / 800; // Adjusted threshold
+            
+            if (skinPixels > skinThreshold && skinRegions.length > 0) {
+                const minX = Math.min(...skinRegions.map(p => p.x));
+                const maxX = Math.max(...skinRegions.map(p => p.x));
+                const minY = Math.min(...skinRegions.map(p => p.y));
+                const maxY = Math.max(...skinRegions.map(p => p.y));
+                
+                const padding = 10;
+                faces.push({
+                    x: Math.max(0, minX - padding),
+                    y: Math.max(0, minY - padding),
+                    width: Math.min(width, maxX - minX + padding * 2),
+                    height: Math.min(height, maxY - minY + padding * 2),
+                    confidence: Math.min(0.9, skinPixels / skinThreshold)
+                });
+            }
+            
+            return faces;
+        }
+
+        function isSkinColor(r, g, b) {
+            // Enhanced skin color detection for various skin tones
+            return (
+                // Light skin tones
+                (r > 95 && g > 40 && b > 20 && 
+                 Math.max(r, g, b) - Math.min(r, g, b) > 15 && 
+                 Math.abs(r - g) > 15 && r > g && r > b) ||
+                
+                // Medium skin tones
+                (r > 60 && r < 230 && g > 50 && g < 200 && b > 30 && b < 180 &&
+                 r > b && g > b) ||
+                
+                // Darker skin tones
+                (r > 40 && r < 120 && g > 30 && g < 100 && b > 20 && b < 80 &&
+                 r > b && g >= b)
+            );
+        }
+
+        function drawFaceBox(face, color = '#00ff00') {
+            ctx.strokeStyle = color;
+            ctx.lineWidth = 2;
+            ctx.strokeRect(face.x, face.y, face.width, face.height);
+            
+            ctx.fillStyle = color;
+            ctx.font = '12px Arial';
+            ctx.fillText(`Face ${Math.round(face.confidence * 100)}%`, face.x, face.y - 5);
+        }
+
+        function updateStatus(message, type) {
+            const statusEl = document.getElementById('status');
+            statusEl.textContent = message;
+            statusEl.className = `status ${type}`;
+        }
+
+        function log(message) {
+            const logEl = document.getElementById('log');
+            const timestamp = new Date().toLocaleTimeString();
+            logEl.innerHTML += `<div>[${timestamp}] ${message}</div>`;
+            logEl.scrollTop = logEl.scrollHeight;
+        }
+    </script>
+</body>
+</html>

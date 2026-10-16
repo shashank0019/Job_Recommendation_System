@@ -1,0 +1,4 @@
+MongoDB Atlas Connection Test - SUCCESS
+Database: career_guidance_db
+Collections: ['connection_test']
+Status: READY TO USE

@@ -1,0 +1,280 @@
+from flask import Flask, request, jsonify, render_template_string
+from flask_cors import CORS
+import os
+import logging
+import json
+from datetime import datetime
+from typing import Dict, Any, List, Optional
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# Initialize Flask app
+app = Flask(__name__)
+CORS(app, 
+     origins=["http://localhost:5173", "http://127.0.0.1:5173", 
+              "http://localhost:5174", "http://127.0.0.1:5174", 
+              "http://localhost:3000", "http://127.0.0.1:3000"],
+     methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+     allow_headers=["Content-Type", "Authorization", "X-Requested-With"])
+
+# Load jobs from JSON file
+def load_jobs_from_file():
+    """Load jobs from posted_jobs.json"""
+    try:
+        jobs_file = os.path.join('data', 'posted_jobs.json')
+        if os.path.exists(jobs_file):
+            with open(jobs_file, 'r', encoding='utf-8') as f:
+                jobs = json.load(f)
+                print(f"Loaded {len(jobs)} jobs from file")
+                return jobs
+        return []
+    except Exception as e:
+        print(f"Error loading jobs: {e}")
+        return []
+
+def save_jobs_to_file(jobs):
+    """Save jobs to posted_jobs.json"""
+    try:
+        os.makedirs('data', exist_ok=True)
+        jobs_file = os.path.join('data', 'posted_jobs.json')
+        with open(jobs_file, 'w', encoding='utf-8') as f:
+            json.dump(jobs, f, indent=2, ensure_ascii=False)
+        return True
+    except Exception as e:
+        print(f"Error saving jobs: {e}")
+        return False
+
+# Global jobs storage
+JOBS = load_jobs_from_file()
+
+@app.route('/')
+def index():
+    """Health check"""
+    return jsonify({
+        'status': 'OK',
+        'message': 'Job Posting Server is running',
+        'total_jobs': len(JOBS)
+    })
+
+@app.route('/api/jobs', methods=['GET', 'POST', 'OPTIONS'])
+def api_jobs():
+    """Handle job API requests"""
+    if request.method == 'OPTIONS':
+        return jsonify({'status': 'OK'})
+    
+    if request.method == 'GET':
+        try:
+            page = int(request.args.get('page', 1))
+            limit = int(request.args.get('limit', 20))
+            
+            # Calculate pagination
+            total = len(JOBS)
+            start_idx = (page - 1) * limit
+            end_idx = min(start_idx + limit, total)
+            
+            jobs_page = JOBS[start_idx:end_idx]
+            
+            print(f"GET /api/jobs - Serving page {page}: {len(jobs_page)} jobs (total: {total})")
+            
+            return jsonify({
+                'success': True,
+                'jobs': jobs_page,
+                'pagination': {
+                    'page': page,
+                    'limit': limit,
+                    'total': total,
+                    'pages': (total + limit - 1) // limit
+                }
+            })
+            
+        except Exception as e:
+            print(f"Error fetching jobs: {e}")
+            return jsonify({
+                'success': False,
+                'error': f'Failed to fetch jobs: {str(e)}'
+            }), 500
+    
+    elif request.method == 'POST':
+        try:
+            data = request.get_json()
+            if not data:
+                return jsonify({
+                    'success': False,
+                    'error': 'No data provided'
+                }), 400
+            
+            # Validate required fields
+            required_fields = ['title', 'company', 'description']
+            for field in required_fields:
+                if not data.get(field):
+                    return jsonify({
+                        'success': False,
+                        'error': f'Missing required field: {field}'
+                    }), 400
+            
+            # Create new job posting
+            new_job = {
+                'id': len(JOBS) + 1,
+                'title': data.get('title'),
+                'company': data.get('company'),
+                'location': data.get('location', 'Not specified'),
+                'description': data.get('description'),
+                'requirements': data.get('requirements', []),
+                'salary': data.get('salary', 'Competitive'),
+                'type': data.get('type', 'full-time'),
+                'posted_date': datetime.utcnow().isoformat(),
+                'status': 'active'
+            }
+            
+            # Add to jobs list
+            JOBS.append(new_job)
+            
+            # Save to file
+            if save_jobs_to_file(JOBS):
+                print(f"POST /api/jobs - New job posted: {new_job['title']} at {new_job['company']}")
+                
+                return jsonify({
+                    'success': True,
+                    'job': new_job,
+                    'message': 'Job posted successfully'
+                })
+            else:
+                return jsonify({
+                    'success': False,
+                    'error': 'Failed to save job'
+                }), 500
+            
+        except Exception as e:
+            print(f"Error creating job: {e}")
+            return jsonify({
+                'success': False,
+                'error': f'Failed to create job posting: {str(e)}'
+            }), 500
+
+# Load experiences from JSON file
+def load_experiences_from_file():
+    """Load experiences from interview_experiences.json"""
+    try:
+        exp_file = os.path.join('data', 'interview_experiences.json')
+        if os.path.exists(exp_file):
+            with open(exp_file, 'r', encoding='utf-8') as f:
+                experiences = json.load(f)
+                print(f"Loaded {len(experiences)} interview experiences from file")
+                return experiences
+        return []
+    except Exception as e:
+        print(f"Error loading experiences: {e}")
+        return []
+
+def save_experiences_to_file(experiences):
+    """Save experiences to interview_experiences.json"""
+    try:
+        os.makedirs('data', exist_ok=True)
+        exp_file = os.path.join('data', 'interview_experiences.json')
+        with open(exp_file, 'w', encoding='utf-8') as f:
+            json.dump(experiences, f, indent=2, ensure_ascii=False)
+        return True
+    except Exception as e:
+        print(f"Error saving experiences: {e}")
+        return False
+
+@app.route('/api/experiences', methods=['GET', 'POST', 'OPTIONS'])
+def api_experiences():
+    """Handle interview experiences"""
+    if request.method == 'OPTIONS':
+        return jsonify({'status': 'OK'})
+    
+    if request.method == 'GET':
+        try:
+            experiences = load_experiences_from_file()
+            print(f"GET /api/experiences - Serving {len(experiences)} interview experiences")
+            
+            return jsonify({
+                'success': True,
+                'experiences': experiences,
+                'total': len(experiences)
+            })
+            
+        except Exception as e:
+            print(f"Error fetching experiences: {e}")
+            return jsonify({
+                'success': False,
+                'error': f'Failed to fetch experiences: {str(e)}'
+            }), 500
+    
+    elif request.method == 'POST':
+        try:
+            data = request.get_json()
+            print(f"POST /api/experiences - Received: {data}")
+            
+            if not data:
+                return jsonify({'success': False, 'error': 'No data provided'}), 400
+            
+            # Load existing experiences
+            experiences = load_experiences_from_file()
+            
+            # Generate new ID
+            new_id = max([exp.get('id', 0) for exp in experiences], default=0) + 1
+            
+            # Create new experience
+            new_experience = {
+                'id': new_id,
+                'company': data.get('company', ''),
+                'position': data.get('position', ''),
+                'interviewer': data.get('interviewer', ''),
+                'experience_text': data.get('experience_text', ''),
+                'difficulty_rating': data.get('difficulty_rating', 'Medium'),
+                'outcome': data.get('outcome', 'Pending'),
+                'interview_type': data.get('interview_type', 'Technical'),
+                'interview_rounds': data.get('interview_rounds', 1),
+                'preparation_time': data.get('preparation_time', ''),
+                'location': data.get('location', ''),
+                'questions_asked': data.get('questions_asked', []),
+                'tags': data.get('tags', []),
+                'date': datetime.utcnow().isoformat(),
+                'created_at': datetime.utcnow().isoformat(),
+                'status': 'published'
+            }
+            
+            # Add and save
+            experiences.append(new_experience)
+            
+            if save_experiences_to_file(experiences):
+                print(f"✅ Created new experience ID {new_id} for {new_experience['company']}")
+                return jsonify({
+                    'success': True,
+                    'experience': new_experience,
+                    'message': 'Interview experience created successfully'
+                }), 201
+            else:
+                return jsonify({'success': False, 'error': 'Failed to save experience'}), 500
+                
+        except Exception as e:
+            print(f"Error creating experience: {e}")
+            return jsonify({'success': False, 'error': str(e)}), 500
+
+@app.route('/test')
+def test_route():
+    """Test endpoint"""
+    return jsonify({
+        'message': 'Server is working!',
+        'endpoints': ['/api/jobs', '/api/experiences'],
+        'total_jobs': len(JOBS)
+    })
+
+if __name__ == '__main__':
+    print("Starting Job Posting Server...")
+    print(f"Loaded {len(JOBS)} existing jobs")
+    print("Available endpoints:")
+    print("  GET / - Health check")
+    print("  GET/POST /api/jobs - Job listings") 
+    print("  GET/POST /api/experiences - Interview experiences")
+    print("  GET /test - Test endpoint")
+    print("Server starting on http://localhost:5000")
+    
+    try:
+        app.run(host='127.0.0.1', port=5000, debug=False)
+    except Exception as e:
+        print(f"Server failed to start: {e}")

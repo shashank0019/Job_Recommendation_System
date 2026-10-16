@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Face Detection Demo</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            padding: 20px; 
+            background: #f0f0f0; 
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .container { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        video { 
+            width: 400px; 
+            height: 300px; 
+            border: 2px solid #ddd; 
+            border-radius: 8px;
+        }
+        canvas { 
+            width: 200px; 
+            height: 150px; 
+            border: 2px solid #007bff; 
+            border-radius: 8px;
+            margin-left: 20px;
+        }
+        .status { 
+            margin: 20px 0; 
+            padding: 15px; 
+            border-radius: 8px; 
+            font-weight: bold; 
+            font-size: 18px;
+        }
+        .good { background: #d4edda; color: #155724; border: 2px solid #c3e6cb; }
+        .warning { background: #fff3cd; color: #856404; border: 2px solid #ffeaa7; }
+        .error { background: #f8d7da; color: #721c24; border: 2px solid #f5c6cb; }
+        button { 
+            padding: 12px 24px; 
+            margin: 8px; 
+            border: none; 
+            border-radius: 6px; 
+            cursor: pointer; 
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .btn-primary { background: #007bff; color: white; }
+        .btn-danger { background: #dc3545; color: white; }
+        .metrics { 
+            background: #f8f9fa; 
+            padding: 15px; 
+            border-radius: 8px; 
+            margin: 20px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .metric { 
+            background: white; 
+            padding: 10px; 
+            border-radius: 6px; 
+            text-align: center;
+        }
+        .log { 
+            background: #f8f9fa; 
+            padding: 15px; 
+            border-radius: 8px; 
+            max-height: 200px; 
+            overflow-y: auto; 
+            font-family: monospace;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Basic Face Detection Demo</h1>
+        <p><strong>How it works:</strong> Analyzes skin color pixels in video to detect faces</p>
+        
+        <div>
+            <button id="startBtn" class="btn-primary">📹 Start Detection</button>
+            <button id="stopBtn" class="btn-danger" disabled>⏹️ Stop</button>
+        </div>
+        
+        <div style="display: flex; align-items: flex-start; margin: 20px 0;">
+            <video id="video" autoplay muted playsinline></video>
+            <canvas id="canvas"></canvas>
+        </div>
+        
+        <div id="status" class="status">Click "Start Detection" to begin</div>
+        
+        <div class="metrics">
+            <div class="metric">
+                <div style="font-size: 24px; color: #007bff;" id="faceCount">0</div>
+                <div>Faces Detected</div>
+            </div>
+            <div class="metric">
+                <div style="font-size: 24px; color: #28a745;" id="confidence">0%</div>
+                <div>Confidence</div>
+            </div>
+            <div class="metric">
+                <div style="font-size: 24px; color: #ffc107;" id="skinPercent">0%</div>
+                <div>Skin Pixels</div>
+            </div>
+            <div class="metric">
+                <div style="font-size: 24px; color: #6c757d;" id="detectionCount">0</div>
+                <div>Detections Run</div>
+            </div>
+        </div>
+        
+        <div class="log" id="log">
+            <strong>Detection Log:</strong><br>
+        </div>
+    </div>
+
+    <script>
+        let video, canvas, ctx;
+        let stream = null;
+        let detectionInterval = null;
+        let detectionCount = 0;
+
+        document.addEventListener('DOMContentLoaded', () => {
+            video = document.getElementById('video');
+            canvas = document.getElementById('canvas');
+            ctx = canvas.getContext('2d');
+            
+            document.getElementById('startBtn').addEventListener('click', start);
+            document.getElementById('stopBtn').addEventListener('click', stop);
+        });
+
+        async function start() {
+            try {
+                updateStatus('Starting camera...', 'warning');
+                log('🔄 Requesting camera access...');
+                
+                stream = await navigator.mediaDevices.getUserMedia({ 
+                    video: { 
+                        width: { ideal: 640 },
+                        height: { ideal: 480 },
+                        facingMode: 'user'
+                    } 
+                });
+                
+                video.srcObject = stream;
+                
+                video.onloadedmetadata = () => {
+                    canvas.width = video.videoWidth;
+                    canvas.height = video.videoHeight;
+                    
+                    updateStatus('Camera active! Starting face detection...', 'good');
+                    log('✅ Camera started, beginning face detection...');
+                    
+                    document.getElementById('startBtn').disabled = true;
+                    document.getElementById('stopBtn').disabled = false;
+                    
+                    // Start detection every 2 seconds
+                    detectionInterval = setInterval(detectFaces, 2000);
+                };
+                
+            } catch (error) {
+                updateStatus(`Camera error: ${error.message}`, 'error');
+                log(`❌ Camera error: ${error.message}`);
+            }
+        }
+
+        function stop() {
+            if (stream) {
+                stream.getTracks().forEach(track => track.stop());
+                stream = null;
+            }
+            
+            if (detectionInterval) {
+                clearInterval(detectionInterval);
+                detectionInterval = null;
+            }
+            
+            video.srcObject = null;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            updateStatus('Stopped', 'warning');
+            log('⏹️ Detection stopped');
+            
+            document.getElementById('startBtn').disabled = false;
+            document.getElementById('stopBtn').disabled = true;
+        }
+
+        function detectFaces() {
+            if (!video || video.videoWidth === 0) return;
+            
+            detectionCount++;
+            document.getElementById('detectionCount').textContent = detectionCount;
+            
+            try {
+                // Draw video frame to canvas
+                ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+                
+                // Get image data
+                const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                
+                // Analyze for faces
+                const result = analyzeForFaces(imageData, canvas.width, canvas.height);
+                
+                // Update UI
+                document.getElementById('faceCount').textContent = result.faceCount;
+                document.getElementById('confidence').textContent = Math.round(result.confidence * 100) + '%';
+                document.getElementById('skinPercent').textContent = result.skinPercentage.toFixed(1) + '%';
+                
+                // Update status
+                if (result.faceCount === 1) {
+                    updateStatus(`✅ Face detected (${Math.round(result.confidence * 100)}% confidence)`, 'good');
+                } else if (result.faceCount > 1) {
+                    updateStatus(`⚠️ Multiple faces detected (${result.faceCount})`, 'warning');
+                } else {
+                    updateStatus('❌ No face detected', 'error');
+                }
+                
+                log(`🔍 Detection ${detectionCount}: ${result.faceCount} faces, ${result.skinPercentage.toFixed(1)}% skin, ${Math.round(result.confidence * 100)}% confidence`);
+                
+            } catch (error) {
+                log(`❌ Detection error: ${error.message}`);
+            }
+        }
+
+        function analyzeForFaces(imageData, width, height) {
+            const data = imageData.data;
+            let skinPixels = 0;
+            let totalPixels = 0;
+            
+            // Sample every 4th pixel for performance
+            for (let i = 0; i < data.length; i += 16) {
+                const r = data[i];
+                const g = data[i + 1];
+                const b = data[i + 2];
+                
+                totalPixels++;
+                
+                if (isSkinColor(r, g, b)) {
+                    skinPixels++;
+                }
+            }
+            
+            const skinPercentage = (skinPixels / totalPixels) * 100;
+            
+            // Face detection logic - improved for multiple people
+            let faceCount = 0;
+            let confidence = 0;
+            
+            if (skinPercentage > 2 && skinPercentage < 15) {
+                // Likely one face
+                faceCount = 1;
+                confidence = Math.min(0.9, skinPercentage / 10);
+            } else if (skinPercentage >= 15 && skinPercentage < 35) {
+                // Multiple faces detected
+                faceCount = Math.max(2, Math.floor(skinPercentage / 12));
+                confidence = 0.8;
+            } else if (skinPercentage >= 35) {
+                // Many faces or very close faces
+                faceCount = Math.max(3, Math.floor(skinPercentage / 15));
+                confidence = 0.9;
+            }
+            
+            return {
+                faceCount,
+                confidence,
+                skinPercentage
+            };
+        }
+
+        function isSkinColor(r, g, b) {
+            // Multiple skin detection algorithms
+            
+            // Algorithm 1: Standard
+            const condition1 = (r > 95 && g > 40 && b > 20) &&
+                              (Math.max(r, g, b) - Math.min(r, g, b) > 15) &&
+                              (Math.abs(r - g) > 15) && (r > g && r > b);
+            
+            // Algorithm 2: Extended range
+            const condition2 = (r > 60 && r < 230) && (g > 50 && g < 200) && 
+                              (b > 30 && b < 180) && (r > b);
+            
+            return condition1 || condition2;
+        }
+
+        function updateStatus(message, type) {
+            const statusEl = document.getElementById('status');
+            statusEl.textContent = message;
+            statusEl.className = `status ${type}`;
+        }
+
+        function log(message) {
+            const logEl = document.getElementById('log');
+            const timestamp = new Date().toLocaleTimeString();
+            logEl.innerHTML += `<div>[${timestamp}] ${message}</div>`;
+            logEl.scrollTop = logEl.scrollHeight;
+        }
+    </script>
+</body>
+</html>

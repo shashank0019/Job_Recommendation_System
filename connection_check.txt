@@ -1,0 +1,36 @@
+﻿======================================================================
+.venv\Scripts\python.exe : 
+Traceback (most recent call 
+last):
+At line:1 char:1
++ .venv\Scripts\python.exe 
+verify_mongodb_connection.py 
+2>&1 | Out-File ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : 
+    NotSpecified: (Traceback  
+   (most recent call last):   
+ :String) [], RemoteExcept    
+ion
+    + FullyQualifiedErrorId : 
+    NativeCommandError
+ 
+  File "C:\Users\SHASHANK\Down
+loads\Documents\vs code\Final_
+pro\verify_mongodb_connection.
+py", line 11, in <module>
+    print("\U0001f50d MongoDB 
+Atlas Connection 
+Verification")
+  File "C:\Users\SHASHANK\AppD
+ata\Local\Programs\Python\Pyth
+on310\lib\encodings\cp1252.py"
+, line 19, in encode
+    return codecs.charmap_enco
+de(input,self.errors,encoding_
+table)[0]
+UnicodeEncodeError: 'charmap' 
+codec can't encode character 
+'\U0001f50d' in position 0: 
+character maps to <undefined>

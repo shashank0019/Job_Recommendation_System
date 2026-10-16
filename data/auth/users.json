@@ -1,0 +1,195 @@
+[
+  {
+    "name": "Shashank C A",
+    "email": "shashikingmaker495@gmail.com",
+    "password_hash": "$2b$12$QoFD4VYluc3Do3sYmPnA9eTqnzOT81Y6nWzIoVBmT.2276WNPxrmS",
+    "created_at": "2025-10-09T07:32:17.599428",
+    "last_login": "2025-10-09T07:35:10.851223",
+    "profile": {
+      "resume_text": "",
+      "skills": [],
+      "preferences": {}
+    },
+    "_id": "63c1617f-a9f7-4137-ba8b-780a0a3c2fd8"
+  },
+  {
+    "name": "Test User",
+    "email": "test@example.com",
+    "password_hash": "$2b$12$Km1NEkhh81L.fwZyANJ3HO9SRGl0XLmvGby9X5ubyRtLiO7cdSC5.",
+    "created_at": "2025-10-09T07:32:54.645914",
+    "last_login": "2025-10-09T08:10:30.578821",
+    "profile": {
+      "resume_text": "",
+      "skills": [],
+      "preferences": {}
+    },
+    "_id": "76d287bf-5f6a-4c27-8bd2-984d9b793c2a"
+  },
+  {
+    "name": "Shashank C A",
+    "email": "shashikingmaker494@gmail.com",
+    "password_hash": "$2b$12$RZSHOCSGXIuS.G1BZPHjXef61K77c0/zhXjPuWbc8jpWx48IvQ4M.",
+    "created_at": "2025-10-09T07:48:01.431278",
+    "last_login": "2025-10-09T07:48:10.327447",
+    "profile": {
+      "resume_text": "",
+      "skills": [],
+      "preferences": {}
+    },
+    "_id": "b4310c2b-d06a-468a-80f9-5dc087a4f009"
+  },
+  {
+    "name": "New User",
+    "email": "newuser@example.com",
+    "password_hash": "$2b$12$fr8GTHMj2a3niY9Q35A4t.UezYZ1QAeak47S5Y2CCT78EqPgHhBpm",
+    "created_at": "2025-10-09T08:10:55.656538",
+    "last_login": "2025-10-09T08:11:19.629872",
+    "profile": {
+      "resume_text": "",
+      "skills": [],
+      "preferences": {}
+    },
+    "_id": "70a74b68-85e6-422f-a999-fc6a01c0cae3"
+  },
+  {
+    "name": "MongoDB User",
+    "email": "mongodb@example.com",
+    "password_hash": "$2b$12$cfY.Oal9AIjxyBVnL7K/Xu55dQ06aWVyBHTQHKblKmJIM1pZxEYtW",
+    "created_at": "2025-10-09T08:16:15.624008",
+    "last_login": "2025-10-09T08:16:38.792183",
+    "profile": {
+      "resume_text": "",
+      "skills": [],
+      "preferences": {}
+    },
+    "_id": "7d9f150e-7657-48eb-9a3d-1c0cd3e63b95"
+  },
+  {
+    "name": "Shashank C A",
+    "email": "shashikingmake19@gmail.com",
+    "password_hash": "$2b$12$bE86yGIl2PPUYhjwDyLK6u5Ep2VUd/mjfU4YBNNs8rQKG/4uFurpW",
+    "created_at": "2025-10-09T08:22:31.817073",
+    "last_login": "2025-10-09T08:22:36.390457",
+    "profile": {
+      "resume_text": "",
+      "skills": [],
+      "preferences": {}
+    },
+    "_id": "9158588c-3a6c-4c63-8b0f-b81f97bfe1f3"
+  },
+  {
+    "name": "Frontend Test",
+    "email": "frontend@test.com",
+    "password_hash": "$2b$12$OzYQyMhMMqsmBFWuYluxJujA45hhrPXtEIddKrAJk6XDam.TG75KC",
+    "created_at": "2025-10-09T08:28:16.470778",
+    "last_login": "2025-10-09T08:28:18.832422",
+    "profile": {
+      "resume_text": "",
+      "skills": [],
+      "preferences": {}
+    },
+    "_id": "2dd1ab5f-1755-4656-83f0-1824c009b555"
+  },
+  {
+    "name": "Local Verification",
+    "email": "verify-042d6f10b4d94448bc189efeae54a6fb@example.com",
+    "password_hash": "$2b$12$nDQ95Tj7J5vaS3wDjBhbbeQ/voP4vrhVoYE3maAqaEKQfjEtR1Y2C",
+    "created_at": "2026-10-15T06:06:28.576361",
+    "last_login": "2026-10-15T06:06:29.218371",
+    "profile": {
+      "resume_text": "",
+      "skills": [],
+      "preferences": {},
+      "mobile": "",
+      "gender": "",
+      "state": "",
+      "employment_status": ""
+    },
+    "_id": "f421be12-1779-4956-aa4c-ab40ec047abe"
+  },
+  {
+    "name": "Shashank C A",
+    "email": "shashikingmaker19@gmail.com",
+    "password_hash": "$2b$12$qpjAx2LUOKma4S.m7TcTf.TGVFGJgLT/Gw5KGa6XmOxI6vL5Nazi2",
+    "created_at": "2026-10-15T06:13:32.496921",
+    "last_login": "2026-10-15T06:21:12.582264",
+    "profile": {
+      "resume_text": "",
+      "skills": [],
+      "preferences": {},
+      "mobile": "",
+      "gender": "",
+      "state": "",
+      "employment_status": ""
+    },
+    "_id": "c5044928-31bb-4906-8836-8c69d5e5e46e"
+  },
+  {
+    "name": "Job Owner",
+    "email": "job-auth-caff33e6256141c09f7bbbf7142f688b@example.com",
+    "password_hash": "$2b$12$6Z.akYdVl2xwBqQj855hA.Za5YXamUW4z3xMfpgPMwSkGdjBK/GrC",
+    "created_at": "2026-10-15T06:18:18.319441",
+    "last_login": "2026-10-15T06:18:18.934664",
+    "profile": {
+      "resume_text": "",
+      "skills": [],
+      "preferences": {},
+      "mobile": "",
+      "gender": "",
+      "state": "",
+      "employment_status": ""
+    },
+    "_id": "e6d55555-ea34-4c96-bec3-671a08c6cd69"
+  },
+  {
+    "name": "Job Owner",
+    "email": "job-auth-d3a2be12a88d47428bd2fd3eac98bb39@example.com",
+    "password_hash": "$2b$12$1F82VbAxF8N5NidF/HfFjeT7sZNbSINrQqhPdOFwLu7xHKaLBgLXO",
+    "created_at": "2026-10-15T06:18:30.065734",
+    "last_login": "2026-10-15T06:18:30.758982",
+    "profile": {
+      "resume_text": "",
+      "skills": [],
+      "preferences": {},
+      "mobile": "",
+      "gender": "",
+      "state": "",
+      "employment_status": ""
+    },
+    "_id": "74c3278b-a4be-443d-af20-24dd45fd0f44"
+  },
+  {
+    "name": "Login Check",
+    "email": "login-check-6fab01f0f6be43d5b3dd8651cc3e3565@example.com",
+    "password_hash": "$2b$12$fsng98.Mx0/PDLa6OSu19.cp6xXUPE0Q2NPMGcp3dLi6m6k85sbRi",
+    "created_at": "2026-10-15T06:18:40.184944",
+    "last_login": "2026-10-15T06:18:40.747627",
+    "profile": {
+      "resume_text": "",
+      "skills": [],
+      "preferences": {},
+      "mobile": "",
+      "gender": "",
+      "state": "",
+      "employment_status": ""
+    },
+    "_id": "2c03847b-5e64-4d32-8726-59780fecf5f6"
+  },
+  {
+    "name": "shashank",
+    "email": "shashank.ca156@gmail.com",
+    "password_hash": "$2b$12$znLpkJXnRm31DH6gvVWtgeBmqzyIsyxsC1JrZDoj2HKAuQ57Sik6i",
+    "created_at": "2026-10-15T06:59:50.456203",
+    "last_login": "2026-10-15T07:00:12.546929",
+    "profile": {
+      "resume_text": "",
+      "skills": [],
+      "preferences": {},
+      "mobile": "",
+      "gender": "",
+      "state": "",
+      "employment_status": ""
+    },
+    "_id": "3735e025-327e-4f2d-9e68-33ddcb90bd29"
+  }
+]

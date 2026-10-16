@@ -1,0 +1,6208 @@
+
+[
+  {
+    "id": "1",
+    "title": "Find the maximum element in an array",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the find the maximum element in an array problem efficiently. This is a easy level problem that requires understanding of array, hash table concepts.",
+      "samples": [
+        {
+          "input": "[-2,1,-3,4,-1,2,1,-5,4]",
+          "output": "6",
+          "explanation": "The subarray [4,-1,2,1] has the largest sum 6."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Check if array is sorted",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the check if array is sorted problem efficiently. This is a easy level problem that requires understanding of array, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Remove duplicates from sorted array",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Binary Search"
+    ],
+    "statement": {
+      "description": "Solve the remove duplicates from sorted array problem efficiently. This is a easy level problem that requires understanding of array, binary search concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Find missing number in array",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the find missing number in array problem efficiently. This is a easy level problem that requires understanding of array, hash table concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Rotate array to the left",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the rotate array to the left problem efficiently. This is a easy level problem that requires understanding of array, hash table concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "6",
+    "title": "Find second largest element",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Binary Search"
+    ],
+    "statement": {
+      "description": "Solve the find second largest element problem efficiently. This is a easy level problem that requires understanding of array, binary search concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "7",
+    "title": "Merge two sorted arrays",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Sorting"
+    ],
+    "statement": {
+      "description": "Solve the merge two sorted arrays problem efficiently. This is a easy level problem that requires understanding of array, sorting concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "8",
+    "title": "Find intersection of two arrays",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the find intersection of two arrays problem efficiently. This is a easy level problem that requires understanding of array, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "9",
+    "title": "Count frequency of each element",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the count frequency of each element problem efficiently. This is a easy level problem that requires understanding of array, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "10",
+    "title": "Find pair with given sum",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Sorting"
+    ],
+    "statement": {
+      "description": "Solve the find pair with given sum problem efficiently. This is a easy level problem that requires understanding of array, sorting concepts.",
+      "samples": [
+        {
+          "input": "[2,7,11,15], 9",
+          "output": "[0,1]",
+          "explanation": "Because nums[0] + nums[1] == 9, we return [0, 1]."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "11",
+    "title": "Find subarray with maximum sum",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Sorting"
+    ],
+    "statement": {
+      "description": "Solve the find subarray with maximum sum problem efficiently. This is a medium level problem that requires understanding of array, sorting concepts.",
+      "samples": [
+        {
+          "input": "[-2,1,-3,4,-1,2,1,-5,4]",
+          "output": "6",
+          "explanation": "The subarray [4,-1,2,1] has the largest sum 6."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "12",
+    "title": "Rotate array by k positions",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the rotate array by k positions problem efficiently. This is a medium level problem that requires understanding of array, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "13",
+    "title": "Find majority element",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the find majority element problem efficiently. This is a medium level problem that requires understanding of array, hash table concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "14",
+    "title": "Spiral traversal of matrix",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Sorting"
+    ],
+    "statement": {
+      "description": "Solve the spiral traversal of matrix problem efficiently. This is a medium level problem that requires understanding of array, sorting concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "15",
+    "title": "Find peak element in array",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the find peak element in array problem efficiently. This is a medium level problem that requires understanding of array, hash table concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "16",
+    "title": "Sort array of 0s, 1s and 2s",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the sort array of 0s, 1s and 2s problem efficiently. This is a medium level problem that requires understanding of array, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "17",
+    "title": "Maximum product subarray",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Binary Search"
+    ],
+    "statement": {
+      "description": "Solve the maximum product subarray problem efficiently. This is a medium level problem that requires understanding of array, binary search concepts.",
+      "samples": [
+        {
+          "input": "[-2,1,-3,4,-1,2,1,-5,4]",
+          "output": "6",
+          "explanation": "The subarray [4,-1,2,1] has the largest sum 6."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "18",
+    "title": "Find minimum in rotated sorted array",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Sorting"
+    ],
+    "statement": {
+      "description": "Solve the find minimum in rotated sorted array problem efficiently. This is a medium level problem that requires understanding of array, sorting concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "19",
+    "title": "Search in rotated sorted array",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Binary Search"
+    ],
+    "statement": {
+      "description": "Solve the search in rotated sorted array problem efficiently. This is a medium level problem that requires understanding of array, binary search concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "20",
+    "title": "Trapping rainwater problem",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the trapping rainwater problem problem efficiently. This is a medium level problem that requires understanding of array, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "21",
+    "title": "Median of two sorted arrays",
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Binary Search"
+    ],
+    "statement": {
+      "description": "Solve the median of two sorted arrays problem efficiently. This is a hard level problem that requires understanding of array, binary search concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "22",
+    "title": "Maximum sliding window",
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Binary Search"
+    ],
+    "statement": {
+      "description": "Solve the maximum sliding window problem efficiently. This is a hard level problem that requires understanding of array, binary search concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "23",
+    "title": "Longest increasing subsequence",
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the longest increasing subsequence problem efficiently. This is a hard level problem that requires understanding of array, hash table concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "24",
+    "title": "Best time to buy and sell stock IV",
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the best time to buy and sell stock iv problem efficiently. This is a hard level problem that requires understanding of array, hash table concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "25",
+    "title": "Count inversions in array",
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Binary Search"
+    ],
+    "statement": {
+      "description": "Solve the count inversions in array problem efficiently. This is a hard level problem that requires understanding of array, binary search concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "26",
+    "title": "Largest rectangle in histogram",
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the largest rectangle in histogram problem efficiently. This is a hard level problem that requires understanding of array, hash table concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "27",
+    "title": "Minimum window substring",
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Binary Search"
+    ],
+    "statement": {
+      "description": "Solve the minimum window substring problem efficiently. This is a hard level problem that requires understanding of array, binary search concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "28",
+    "title": "Merge k sorted arrays",
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Sorting"
+    ],
+    "statement": {
+      "description": "Solve the merge k sorted arrays problem efficiently. This is a hard level problem that requires understanding of array, sorting concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "29",
+    "title": "Find kth smallest element",
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the find kth smallest element problem efficiently. This is a hard level problem that requires understanding of array, hash table concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "30",
+    "title": "Maximum sum rectangle in matrix",
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the maximum sum rectangle in matrix problem efficiently. This is a hard level problem that requires understanding of array, two pointers concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "31",
+    "title": "Reverse a string",
+    "difficulty": "Easy",
+    "topics": [
+      "String",
+      "Sliding Window"
+    ],
+    "statement": {
+      "description": "Solve the reverse a string problem efficiently. This is a easy level problem that requires understanding of string, sliding window concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "32",
+    "title": "Check if string is palindrome",
+    "difficulty": "Easy",
+    "topics": [
+      "String",
+      "Sliding Window"
+    ],
+    "statement": {
+      "description": "Solve the check if string is palindrome problem efficiently. This is a easy level problem that requires understanding of string, sliding window concepts.",
+      "samples": [
+        {
+          "input": "\"babad\"",
+          "output": "\"bab\"",
+          "explanation": "Note: \"aba\" is also a valid answer."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "33",
+    "title": "Count vowels and consonants",
+    "difficulty": "Easy",
+    "topics": [
+      "String",
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the count vowels and consonants problem efficiently. This is a easy level problem that requires understanding of string, hash table concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "34",
+    "title": "Remove spaces from string",
+    "difficulty": "Easy",
+    "topics": [
+      "String",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the remove spaces from string problem efficiently. This is a easy level problem that requires understanding of string, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "35",
+    "title": "Check if two strings are anagrams",
+    "difficulty": "Easy",
+    "topics": [
+      "String",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the check if two strings are anagrams problem efficiently. This is a easy level problem that requires understanding of string, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "36",
+    "title": "Find first non-repeating character",
+    "difficulty": "Easy",
+    "topics": [
+      "String",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the find first non-repeating character problem efficiently. This is a easy level problem that requires understanding of string, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "37",
+    "title": "Convert string to integer",
+    "difficulty": "Easy",
+    "topics": [
+      "String",
+      "Trie"
+    ],
+    "statement": {
+      "description": "Solve the convert string to integer problem efficiently. This is a easy level problem that requires understanding of string, trie concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "38",
+    "title": "Check if strings are rotations",
+    "difficulty": "Easy",
+    "topics": [
+      "String",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the check if strings are rotations problem efficiently. This is a easy level problem that requires understanding of string, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "39",
+    "title": "Remove duplicates from string",
+    "difficulty": "Easy",
+    "topics": [
+      "String",
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the remove duplicates from string problem efficiently. This is a easy level problem that requires understanding of string, hash table concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "40",
+    "title": "Find longest word in sentence",
+    "difficulty": "Easy",
+    "topics": [
+      "String",
+      "Sliding Window"
+    ],
+    "statement": {
+      "description": "Solve the find longest word in sentence problem efficiently. This is a easy level problem that requires understanding of string, sliding window concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "41",
+    "title": "Longest palindromic substring",
+    "difficulty": "Medium",
+    "topics": [
+      "String",
+      "Trie"
+    ],
+    "statement": {
+      "description": "Solve the longest palindromic substring problem efficiently. This is a medium level problem that requires understanding of string, trie concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "42",
+    "title": "Group anagrams together",
+    "difficulty": "Medium",
+    "topics": [
+      "String",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the group anagrams together problem efficiently. This is a medium level problem that requires understanding of string, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "43",
+    "title": "String compression",
+    "difficulty": "Medium",
+    "topics": [
+      "String",
+      "Sliding Window"
+    ],
+    "statement": {
+      "description": "Solve the string compression problem efficiently. This is a medium level problem that requires understanding of string, sliding window concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "44",
+    "title": "Find all permutations of string",
+    "difficulty": "Medium",
+    "topics": [
+      "String",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the find all permutations of string problem efficiently. This is a medium level problem that requires understanding of string, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "45",
+    "title": "Longest substring without repeating characters",
+    "difficulty": "Medium",
+    "topics": [
+      "String",
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the longest substring without repeating characters problem efficiently. This is a medium level problem that requires understanding of string, hash table concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "46",
+    "title": "Valid parentheses combinations",
+    "difficulty": "Medium",
+    "topics": [
+      "String",
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the valid parentheses combinations problem efficiently. This is a medium level problem that requires understanding of string, hash table concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "47",
+    "title": "Word break problem",
+    "difficulty": "Medium",
+    "topics": [
+      "String",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the word break problem problem efficiently. This is a medium level problem that requires understanding of string, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "48",
+    "title": "Minimum edit distance",
+    "difficulty": "Medium",
+    "topics": [
+      "String",
+      "Sliding Window"
+    ],
+    "statement": {
+      "description": "Solve the minimum edit distance problem efficiently. This is a medium level problem that requires understanding of string, sliding window concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "49",
+    "title": "Longest common subsequence",
+    "difficulty": "Medium",
+    "topics": [
+      "String",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the longest common subsequence problem efficiently. This is a medium level problem that requires understanding of string, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "50",
+    "title": "Pattern matching with wildcards",
+    "difficulty": "Medium",
+    "topics": [
+      "String",
+      "Sliding Window"
+    ],
+    "statement": {
+      "description": "Solve the pattern matching with wildcards problem efficiently. This is a medium level problem that requires understanding of string, sliding window concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "51",
+    "title": "Regular expression matching",
+    "difficulty": "Hard",
+    "topics": [
+      "String",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the regular expression matching problem efficiently. This is a hard level problem that requires understanding of string, two pointers concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "52",
+    "title": "Shortest palindrome",
+    "difficulty": "Hard",
+    "topics": [
+      "String",
+      "Sliding Window"
+    ],
+    "statement": {
+      "description": "Solve the shortest palindrome problem efficiently. This is a hard level problem that requires understanding of string, sliding window concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "53",
+    "title": "Word ladder problem",
+    "difficulty": "Hard",
+    "topics": [
+      "String",
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the word ladder problem problem efficiently. This is a hard level problem that requires understanding of string, hash table concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "54",
+    "title": "Interleaving strings",
+    "difficulty": "Hard",
+    "topics": [
+      "String",
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the interleaving strings problem efficiently. This is a hard level problem that requires understanding of string, hash table concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "55",
+    "title": "Palindrome partitioning",
+    "difficulty": "Hard",
+    "topics": [
+      "String",
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the palindrome partitioning problem efficiently. This is a hard level problem that requires understanding of string, hash table concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "56",
+    "title": "Edit distance with operations",
+    "difficulty": "Hard",
+    "topics": [
+      "String",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the edit distance with operations problem efficiently. This is a hard level problem that requires understanding of string, two pointers concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "57",
+    "title": "Longest valid parentheses",
+    "difficulty": "Hard",
+    "topics": [
+      "String",
+      "Trie"
+    ],
+    "statement": {
+      "description": "Solve the longest valid parentheses problem efficiently. This is a hard level problem that requires understanding of string, trie concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "58",
+    "title": "String matching algorithms",
+    "difficulty": "Hard",
+    "topics": [
+      "String",
+      "Trie"
+    ],
+    "statement": {
+      "description": "Solve the string matching algorithms problem efficiently. This is a hard level problem that requires understanding of string, trie concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "59",
+    "title": "Suffix array construction",
+    "difficulty": "Hard",
+    "topics": [
+      "String",
+      "Trie"
+    ],
+    "statement": {
+      "description": "Solve the suffix array construction problem efficiently. This is a hard level problem that requires understanding of string, trie concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "60",
+    "title": "Reverse a linked list",
+    "difficulty": "Easy",
+    "topics": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the reverse a linked list problem efficiently. This is a easy level problem that requires understanding of linked list, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "[5,4,3,2,1]",
+          "explanation": "Reverse the linked list."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "61",
+    "title": "Find middle of linked list",
+    "difficulty": "Easy",
+    "topics": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the find middle of linked list problem efficiently. This is a easy level problem that requires understanding of linked list, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "62",
+    "title": "Detect cycle in linked list",
+    "difficulty": "Easy",
+    "topics": [
+      "Linked List",
+      "Stack"
+    ],
+    "statement": {
+      "description": "Solve the detect cycle in linked list problem efficiently. This is a easy level problem that requires understanding of linked list, stack concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "63",
+    "title": "Remove duplicates from sorted list",
+    "difficulty": "Easy",
+    "topics": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the remove duplicates from sorted list problem efficiently. This is a easy level problem that requires understanding of linked list, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "64",
+    "title": "Merge two sorted lists",
+    "difficulty": "Easy",
+    "topics": [
+      "Linked List",
+      "Stack"
+    ],
+    "statement": {
+      "description": "Solve the merge two sorted lists problem efficiently. This is a easy level problem that requires understanding of linked list, stack concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "65",
+    "title": "Find length of linked list",
+    "difficulty": "Easy",
+    "topics": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the find length of linked list problem efficiently. This is a easy level problem that requires understanding of linked list, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "66",
+    "title": "Delete node with given value",
+    "difficulty": "Easy",
+    "topics": [
+      "Linked List",
+      "Recursion"
+    ],
+    "statement": {
+      "description": "Solve the delete node with given value problem efficiently. This is a easy level problem that requires understanding of linked list, recursion concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "67",
+    "title": "Insert node at position",
+    "difficulty": "Easy",
+    "topics": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the insert node at position problem efficiently. This is a easy level problem that requires understanding of linked list, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "68",
+    "title": "Check if linked list is palindrome",
+    "difficulty": "Easy",
+    "topics": [
+      "Linked List",
+      "Stack"
+    ],
+    "statement": {
+      "description": "Solve the check if linked list is palindrome problem efficiently. This is a easy level problem that requires understanding of linked list, stack concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "69",
+    "title": "Find nth node from end",
+    "difficulty": "Easy",
+    "topics": [
+      "Linked List",
+      "Recursion"
+    ],
+    "statement": {
+      "description": "Solve the find nth node from end problem efficiently. This is a easy level problem that requires understanding of linked list, recursion concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "70",
+    "title": "Add two numbers as linked lists",
+    "difficulty": "Medium",
+    "topics": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the add two numbers as linked lists problem efficiently. This is a medium level problem that requires understanding of linked list, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "71",
+    "title": "Remove nth node from end",
+    "difficulty": "Medium",
+    "topics": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the remove nth node from end problem efficiently. This is a medium level problem that requires understanding of linked list, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "72",
+    "title": "Rotate linked list",
+    "difficulty": "Medium",
+    "topics": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the rotate linked list problem efficiently. This is a medium level problem that requires understanding of linked list, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "73",
+    "title": "Clone list with random pointers",
+    "difficulty": "Medium",
+    "topics": [
+      "Linked List",
+      "Recursion"
+    ],
+    "statement": {
+      "description": "Solve the clone list with random pointers problem efficiently. This is a medium level problem that requires understanding of linked list, recursion concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "74",
+    "title": "Intersection of two linked lists",
+    "difficulty": "Medium",
+    "topics": [
+      "Linked List",
+      "Recursion"
+    ],
+    "statement": {
+      "description": "Solve the intersection of two linked lists problem efficiently. This is a medium level problem that requires understanding of linked list, recursion concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "75",
+    "title": "Sort linked list",
+    "difficulty": "Medium",
+    "topics": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the sort linked list problem efficiently. This is a medium level problem that requires understanding of linked list, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "76",
+    "title": "Reverse nodes in k-groups",
+    "difficulty": "Medium",
+    "topics": [
+      "Linked List",
+      "Recursion"
+    ],
+    "statement": {
+      "description": "Solve the reverse nodes in k-groups problem efficiently. This is a medium level problem that requires understanding of linked list, recursion concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "77",
+    "title": "Flatten multilevel doubly linked list",
+    "difficulty": "Medium",
+    "topics": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the flatten multilevel doubly linked list problem efficiently. This is a medium level problem that requires understanding of linked list, two pointers concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "78",
+    "title": "Split linked list in parts",
+    "difficulty": "Medium",
+    "topics": [
+      "Linked List",
+      "Recursion"
+    ],
+    "statement": {
+      "description": "Solve the split linked list in parts problem efficiently. This is a medium level problem that requires understanding of linked list, recursion concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "79",
+    "title": "Odd even linked list",
+    "difficulty": "Medium",
+    "topics": [
+      "Linked List",
+      "Recursion"
+    ],
+    "statement": {
+      "description": "Solve the odd even linked list problem efficiently. This is a medium level problem that requires understanding of linked list, recursion concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "80",
+    "title": "Merge k sorted lists",
+    "difficulty": "Hard",
+    "topics": [
+      "Linked List",
+      "Stack"
+    ],
+    "statement": {
+      "description": "Solve the merge k sorted lists problem efficiently. This is a hard level problem that requires understanding of linked list, stack concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "81",
+    "title": "Reverse nodes in k-group",
+    "difficulty": "Hard",
+    "topics": [
+      "Linked List",
+      "Recursion"
+    ],
+    "statement": {
+      "description": "Solve the reverse nodes in k-group problem efficiently. This is a hard level problem that requires understanding of linked list, recursion concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "82",
+    "title": "LRU Cache implementation",
+    "difficulty": "Hard",
+    "topics": [
+      "Linked List",
+      "Stack"
+    ],
+    "statement": {
+      "description": "Solve the lru cache implementation problem efficiently. This is a hard level problem that requires understanding of linked list, stack concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "83",
+    "title": "Skip list implementation",
+    "difficulty": "Hard",
+    "topics": [
+      "Linked List",
+      "Recursion"
+    ],
+    "statement": {
+      "description": "Solve the skip list implementation problem efficiently. This is a hard level problem that requires understanding of linked list, recursion concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "84",
+    "title": "Design linked list",
+    "difficulty": "Hard",
+    "topics": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the design linked list problem efficiently. This is a hard level problem that requires understanding of linked list, two pointers concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "85",
+    "title": "Memory efficient doubly linked list",
+    "difficulty": "Hard",
+    "topics": [
+      "Linked List",
+      "Stack"
+    ],
+    "statement": {
+      "description": "Solve the memory efficient doubly linked list problem efficiently. This is a hard level problem that requires understanding of linked list, stack concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "86",
+    "title": "XOR linked list",
+    "difficulty": "Hard",
+    "topics": [
+      "Linked List",
+      "Stack"
+    ],
+    "statement": {
+      "description": "Solve the xor linked list problem efficiently. This is a hard level problem that requires understanding of linked list, stack concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "87",
+    "title": "Self organizing list",
+    "difficulty": "Hard",
+    "topics": [
+      "Linked List",
+      "Stack"
+    ],
+    "statement": {
+      "description": "Solve the self organizing list problem efficiently. This is a hard level problem that requires understanding of linked list, stack concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "88",
+    "title": "Josephus problem with linked list",
+    "difficulty": "Hard",
+    "topics": [
+      "Linked List",
+      "Recursion"
+    ],
+    "statement": {
+      "description": "Solve the josephus problem with linked list problem efficiently. This is a hard level problem that requires understanding of linked list, recursion concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "89",
+    "title": "Unrolled linked list",
+    "difficulty": "Hard",
+    "topics": [
+      "Linked List",
+      "Two Pointers"
+    ],
+    "statement": {
+      "description": "Solve the unrolled linked list problem efficiently. This is a hard level problem that requires understanding of linked list, two pointers concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "90",
+    "title": "Find height of binary tree",
+    "difficulty": "Easy",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the find height of binary tree problem efficiently. This is a easy level problem that requires understanding of tree, binary tree, bfs concepts.",
+      "samples": [
+        {
+          "input": "[3,9,20,null,null,15,7]",
+          "output": "3",
+          "explanation": "The maximum depth is 3."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "91",
+    "title": "Count nodes in binary tree",
+    "difficulty": "Easy",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "Recursion"
+    ],
+    "statement": {
+      "description": "Solve the count nodes in binary tree problem efficiently. This is a easy level problem that requires understanding of tree, binary tree, recursion concepts.",
+      "samples": [
+        {
+          "input": "[3,9,20,null,null,15,7]",
+          "output": "3",
+          "explanation": "The maximum depth is 3."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "92",
+    "title": "Check if tree is balanced",
+    "difficulty": "Easy",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the check if tree is balanced problem efficiently. This is a easy level problem that requires understanding of tree, binary tree, bfs concepts.",
+      "samples": [
+        {
+          "input": "[3,9,20,null,null,15,7]",
+          "output": "3",
+          "explanation": "The maximum depth is 3."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "93",
+    "title": "Find diameter of binary tree",
+    "difficulty": "Easy",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "Recursion"
+    ],
+    "statement": {
+      "description": "Solve the find diameter of binary tree problem efficiently. This is a easy level problem that requires understanding of tree, binary tree, recursion concepts.",
+      "samples": [
+        {
+          "input": "[3,9,20,null,null,15,7]",
+          "output": "3",
+          "explanation": "The maximum depth is 3."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "94",
+    "title": "Level order traversal",
+    "difficulty": "Easy",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "Recursion"
+    ],
+    "statement": {
+      "description": "Solve the level order traversal problem efficiently. This is a easy level problem that requires understanding of tree, binary tree, recursion concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "95",
+    "title": "Check if trees are identical",
+    "difficulty": "Easy",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "DFS"
+    ],
+    "statement": {
+      "description": "Solve the check if trees are identical problem efficiently. This is a easy level problem that requires understanding of tree, binary tree, dfs concepts.",
+      "samples": [
+        {
+          "input": "[3,9,20,null,null,15,7]",
+          "output": "3",
+          "explanation": "The maximum depth is 3."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "96",
+    "title": "Find minimum depth",
+    "difficulty": "Easy",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "DFS"
+    ],
+    "statement": {
+      "description": "Solve the find minimum depth problem efficiently. This is a easy level problem that requires understanding of tree, binary tree, dfs concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "97",
+    "title": "Sum of all nodes",
+    "difficulty": "Easy",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "DFS"
+    ],
+    "statement": {
+      "description": "Solve the sum of all nodes problem efficiently. This is a easy level problem that requires understanding of tree, binary tree, dfs concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "98",
+    "title": "Mirror a binary tree",
+    "difficulty": "Easy",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "DFS"
+    ],
+    "statement": {
+      "description": "Solve the mirror a binary tree problem efficiently. This is a easy level problem that requires understanding of tree, binary tree, dfs concepts.",
+      "samples": [
+        {
+          "input": "[3,9,20,null,null,15,7]",
+          "output": "3",
+          "explanation": "The maximum depth is 3."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "99",
+    "title": "Find leaf nodes",
+    "difficulty": "Easy",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "Recursion"
+    ],
+    "statement": {
+      "description": "Solve the find leaf nodes problem efficiently. This is a easy level problem that requires understanding of tree, binary tree, recursion concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "100",
+    "title": "Lowest common ancestor",
+    "difficulty": "Medium",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the lowest common ancestor problem efficiently. This is a medium level problem that requires understanding of tree, binary tree, bfs concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "101",
+    "title": "Convert sorted array to BST",
+    "difficulty": "Medium",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the convert sorted array to bst problem efficiently. This is a medium level problem that requires understanding of tree, binary tree, bfs concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "102",
+    "title": "Validate binary search tree",
+    "difficulty": "Medium",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "DFS"
+    ],
+    "statement": {
+      "description": "Solve the validate binary search tree problem efficiently. This is a medium level problem that requires understanding of tree, binary tree, dfs concepts.",
+      "samples": [
+        {
+          "input": "[3,9,20,null,null,15,7]",
+          "output": "3",
+          "explanation": "The maximum depth is 3."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "103",
+    "title": "Path sum problems",
+    "difficulty": "Medium",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "DFS"
+    ],
+    "statement": {
+      "description": "Solve the path sum problems problem efficiently. This is a medium level problem that requires understanding of tree, binary tree, dfs concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "104",
+    "title": "Serialize and deserialize tree",
+    "difficulty": "Medium",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the serialize and deserialize tree problem efficiently. This is a medium level problem that requires understanding of tree, binary tree, bfs concepts.",
+      "samples": [
+        {
+          "input": "[3,9,20,null,null,15,7]",
+          "output": "3",
+          "explanation": "The maximum depth is 3."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "105",
+    "title": "Boundary traversal",
+    "difficulty": "Medium",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the boundary traversal problem efficiently. This is a medium level problem that requires understanding of tree, binary tree, bfs concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "106",
+    "title": "Vertical order traversal",
+    "difficulty": "Medium",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the vertical order traversal problem efficiently. This is a medium level problem that requires understanding of tree, binary tree, bfs concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "107",
+    "title": "Right view of binary tree",
+    "difficulty": "Medium",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "Recursion"
+    ],
+    "statement": {
+      "description": "Solve the right view of binary tree problem efficiently. This is a medium level problem that requires understanding of tree, binary tree, recursion concepts.",
+      "samples": [
+        {
+          "input": "[3,9,20,null,null,15,7]",
+          "output": "3",
+          "explanation": "The maximum depth is 3."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "108",
+    "title": "Connect nodes at same level",
+    "difficulty": "Medium",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the connect nodes at same level problem efficiently. This is a medium level problem that requires understanding of tree, binary tree, bfs concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "109",
+    "title": "Construct tree from traversals",
+    "difficulty": "Medium",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the construct tree from traversals problem efficiently. This is a medium level problem that requires understanding of tree, binary tree, bfs concepts.",
+      "samples": [
+        {
+          "input": "[3,9,20,null,null,15,7]",
+          "output": "3",
+          "explanation": "The maximum depth is 3."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "110",
+    "title": "Binary tree maximum path sum",
+    "difficulty": "Hard",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the binary tree maximum path sum problem efficiently. This is a hard level problem that requires understanding of tree, binary tree, bfs concepts.",
+      "samples": [
+        {
+          "input": "[3,9,20,null,null,15,7]",
+          "output": "3",
+          "explanation": "The maximum depth is 3."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "111",
+    "title": "Recover binary search tree",
+    "difficulty": "Hard",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "Recursion"
+    ],
+    "statement": {
+      "description": "Solve the recover binary search tree problem efficiently. This is a hard level problem that requires understanding of tree, binary tree, recursion concepts.",
+      "samples": [
+        {
+          "input": "[3,9,20,null,null,15,7]",
+          "output": "3",
+          "explanation": "The maximum depth is 3."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "112",
+    "title": "Count complete tree nodes",
+    "difficulty": "Hard",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "Recursion"
+    ],
+    "statement": {
+      "description": "Solve the count complete tree nodes problem efficiently. This is a hard level problem that requires understanding of tree, binary tree, recursion concepts.",
+      "samples": [
+        {
+          "input": "[3,9,20,null,null,15,7]",
+          "output": "3",
+          "explanation": "The maximum depth is 3."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "113",
+    "title": "Minimum cost tree from leaf values",
+    "difficulty": "Hard",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the minimum cost tree from leaf values problem efficiently. This is a hard level problem that requires understanding of tree, binary tree, bfs concepts.",
+      "samples": [
+        {
+          "input": "[3,9,20,null,null,15,7]",
+          "output": "3",
+          "explanation": "The maximum depth is 3."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "114",
+    "title": "House robber in binary tree",
+    "difficulty": "Hard",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "Recursion"
+    ],
+    "statement": {
+      "description": "Solve the house robber in binary tree problem efficiently. This is a hard level problem that requires understanding of tree, binary tree, recursion concepts.",
+      "samples": [
+        {
+          "input": "[3,9,20,null,null,15,7]",
+          "output": "3",
+          "explanation": "The maximum depth is 3."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "115",
+    "title": "Distribute coins in binary tree",
+    "difficulty": "Hard",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "DFS"
+    ],
+    "statement": {
+      "description": "Solve the distribute coins in binary tree problem efficiently. This is a hard level problem that requires understanding of tree, binary tree, dfs concepts.",
+      "samples": [
+        {
+          "input": "[3,9,20,null,null,15,7]",
+          "output": "3",
+          "explanation": "The maximum depth is 3."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "116",
+    "title": "Maximum width of binary tree",
+    "difficulty": "Hard",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the maximum width of binary tree problem efficiently. This is a hard level problem that requires understanding of tree, binary tree, bfs concepts.",
+      "samples": [
+        {
+          "input": "[3,9,20,null,null,15,7]",
+          "output": "3",
+          "explanation": "The maximum depth is 3."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "117",
+    "title": "Vertical order traversal II",
+    "difficulty": "Hard",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "DFS"
+    ],
+    "statement": {
+      "description": "Solve the vertical order traversal ii problem efficiently. This is a hard level problem that requires understanding of tree, binary tree, dfs concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "118",
+    "title": "All nodes distance K",
+    "difficulty": "Hard",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "DFS"
+    ],
+    "statement": {
+      "description": "Solve the all nodes distance k problem efficiently. This is a hard level problem that requires understanding of tree, binary tree, dfs concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "119",
+    "title": "Binary tree cameras",
+    "difficulty": "Hard",
+    "topics": [
+      "Tree",
+      "Binary Tree",
+      "Recursion"
+    ],
+    "statement": {
+      "description": "Solve the binary tree cameras problem efficiently. This is a hard level problem that requires understanding of tree, binary tree, recursion concepts.",
+      "samples": [
+        {
+          "input": "[3,9,20,null,null,15,7]",
+          "output": "3",
+          "explanation": "The maximum depth is 3."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "120",
+    "title": "Fibonacci sequence",
+    "difficulty": "Easy",
+    "topics": [
+      "Dynamic Programming",
+      "String"
+    ],
+    "statement": {
+      "description": "Solve the fibonacci sequence problem efficiently. This is a easy level problem that requires understanding of dynamic programming, string concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "121",
+    "title": "Climbing stairs",
+    "difficulty": "Easy",
+    "topics": [
+      "Dynamic Programming",
+      "String"
+    ],
+    "statement": {
+      "description": "Solve the climbing stairs problem efficiently. This is a easy level problem that requires understanding of dynamic programming, string concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "122",
+    "title": "House robber",
+    "difficulty": "Easy",
+    "topics": [
+      "Dynamic Programming",
+      "Array"
+    ],
+    "statement": {
+      "description": "Solve the house robber problem efficiently. This is a easy level problem that requires understanding of dynamic programming, array concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "123",
+    "title": "Maximum subarray sum",
+    "difficulty": "Easy",
+    "topics": [
+      "Dynamic Programming",
+      "String"
+    ],
+    "statement": {
+      "description": "Solve the maximum subarray sum problem efficiently. This is a easy level problem that requires understanding of dynamic programming, string concepts.",
+      "samples": [
+        {
+          "input": "[-2,1,-3,4,-1,2,1,-5,4]",
+          "output": "6",
+          "explanation": "The subarray [4,-1,2,1] has the largest sum 6."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "124",
+    "title": "Unique paths in grid",
+    "difficulty": "Easy",
+    "topics": [
+      "Dynamic Programming",
+      "Math"
+    ],
+    "statement": {
+      "description": "Solve the unique paths in grid problem efficiently. This is a easy level problem that requires understanding of dynamic programming, math concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "125",
+    "title": "Min cost climbing stairs",
+    "difficulty": "Easy",
+    "topics": [
+      "Dynamic Programming",
+      "Array"
+    ],
+    "statement": {
+      "description": "Solve the min cost climbing stairs problem efficiently. This is a easy level problem that requires understanding of dynamic programming, array concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "126",
+    "title": "Range sum query",
+    "difficulty": "Easy",
+    "topics": [
+      "Dynamic Programming",
+      "String"
+    ],
+    "statement": {
+      "description": "Solve the range sum query problem efficiently. This is a easy level problem that requires understanding of dynamic programming, string concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "127",
+    "title": "Best time to buy/sell stock",
+    "difficulty": "Easy",
+    "topics": [
+      "Dynamic Programming",
+      "String"
+    ],
+    "statement": {
+      "description": "Solve the best time to buy/sell stock problem efficiently. This is a easy level problem that requires understanding of dynamic programming, string concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "128",
+    "title": "Pascal's triangle",
+    "difficulty": "Easy",
+    "topics": [
+      "Dynamic Programming",
+      "Array"
+    ],
+    "statement": {
+      "description": "Solve the pascal's triangle problem efficiently. This is a easy level problem that requires understanding of dynamic programming, array concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "129",
+    "title": "Counting bits",
+    "difficulty": "Easy",
+    "topics": [
+      "Dynamic Programming",
+      "String"
+    ],
+    "statement": {
+      "description": "Solve the counting bits problem efficiently. This is a easy level problem that requires understanding of dynamic programming, string concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "130",
+    "title": "Coin change problem",
+    "difficulty": "Medium",
+    "topics": [
+      "Dynamic Programming",
+      "Math"
+    ],
+    "statement": {
+      "description": "Solve the coin change problem problem efficiently. This is a medium level problem that requires understanding of dynamic programming, math concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "131",
+    "title": "Edit distance",
+    "difficulty": "Medium",
+    "topics": [
+      "Dynamic Programming",
+      "Array"
+    ],
+    "statement": {
+      "description": "Solve the edit distance problem efficiently. This is a medium level problem that requires understanding of dynamic programming, array concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "132",
+    "title": "Unique binary search trees",
+    "difficulty": "Medium",
+    "topics": [
+      "Dynamic Programming",
+      "Math"
+    ],
+    "statement": {
+      "description": "Solve the unique binary search trees problem efficiently. This is a medium level problem that requires understanding of dynamic programming, math concepts.",
+      "samples": [
+        {
+          "input": "[3,9,20,null,null,15,7]",
+          "output": "3",
+          "explanation": "The maximum depth is 3."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "133",
+    "title": "Decode ways",
+    "difficulty": "Medium",
+    "topics": [
+      "Dynamic Programming",
+      "Math"
+    ],
+    "statement": {
+      "description": "Solve the decode ways problem efficiently. This is a medium level problem that requires understanding of dynamic programming, math concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "134",
+    "title": "Word break",
+    "difficulty": "Medium",
+    "topics": [
+      "Dynamic Programming",
+      "String"
+    ],
+    "statement": {
+      "description": "Solve the word break problem efficiently. This is a medium level problem that requires understanding of dynamic programming, string concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "135",
+    "title": "Triangle minimum path",
+    "difficulty": "Medium",
+    "topics": [
+      "Dynamic Programming",
+      "Math"
+    ],
+    "statement": {
+      "description": "Solve the triangle minimum path problem efficiently. This is a medium level problem that requires understanding of dynamic programming, math concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "136",
+    "title": "Perfect squares",
+    "difficulty": "Medium",
+    "topics": [
+      "Dynamic Programming",
+      "Array"
+    ],
+    "statement": {
+      "description": "Solve the perfect squares problem efficiently. This is a medium level problem that requires understanding of dynamic programming, array concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "137",
+    "title": "Combination sum IV",
+    "difficulty": "Medium",
+    "topics": [
+      "Dynamic Programming",
+      "String"
+    ],
+    "statement": {
+      "description": "Solve the combination sum iv problem efficiently. This is a medium level problem that requires understanding of dynamic programming, string concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "138",
+    "title": "Wildcard pattern matching",
+    "difficulty": "Hard",
+    "topics": [
+      "Dynamic Programming",
+      "Math"
+    ],
+    "statement": {
+      "description": "Solve the wildcard pattern matching problem efficiently. This is a hard level problem that requires understanding of dynamic programming, math concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "139",
+    "title": "Maximal rectangle",
+    "difficulty": "Hard",
+    "topics": [
+      "Dynamic Programming",
+      "Math"
+    ],
+    "statement": {
+      "description": "Solve the maximal rectangle problem efficiently. This is a hard level problem that requires understanding of dynamic programming, math concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "140",
+    "title": "Best time to buy/sell stock III",
+    "difficulty": "Hard",
+    "topics": [
+      "Dynamic Programming",
+      "Array"
+    ],
+    "statement": {
+      "description": "Solve the best time to buy/sell stock iii problem efficiently. This is a hard level problem that requires understanding of dynamic programming, array concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "141",
+    "title": "Interleaving string",
+    "difficulty": "Hard",
+    "topics": [
+      "Dynamic Programming",
+      "Math"
+    ],
+    "statement": {
+      "description": "Solve the interleaving string problem efficiently. This is a hard level problem that requires understanding of dynamic programming, math concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "142",
+    "title": "Scramble string",
+    "difficulty": "Hard",
+    "topics": [
+      "Dynamic Programming",
+      "Array"
+    ],
+    "statement": {
+      "description": "Solve the scramble string problem efficiently. This is a hard level problem that requires understanding of dynamic programming, array concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "143",
+    "title": "Palindrome partitioning II",
+    "difficulty": "Hard",
+    "topics": [
+      "Dynamic Programming",
+      "String"
+    ],
+    "statement": {
+      "description": "Solve the palindrome partitioning ii problem efficiently. This is a hard level problem that requires understanding of dynamic programming, string concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "144",
+    "title": "Burst balloons",
+    "difficulty": "Hard",
+    "topics": [
+      "Dynamic Programming",
+      "Array"
+    ],
+    "statement": {
+      "description": "Solve the burst balloons problem efficiently. This is a hard level problem that requires understanding of dynamic programming, array concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "145",
+    "title": "Russian doll envelopes",
+    "difficulty": "Hard",
+    "topics": [
+      "Dynamic Programming",
+      "Math"
+    ],
+    "statement": {
+      "description": "Solve the russian doll envelopes problem efficiently. This is a hard level problem that requires understanding of dynamic programming, math concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "146",
+    "title": "Breadth first search",
+    "difficulty": "Easy",
+    "topics": [
+      "Graph",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the breadth first search problem efficiently. This is a easy level problem that requires understanding of graph, bfs concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "147",
+    "title": "Depth first search",
+    "difficulty": "Easy",
+    "topics": [
+      "Graph",
+      "Union Find"
+    ],
+    "statement": {
+      "description": "Solve the depth first search problem efficiently. This is a easy level problem that requires understanding of graph, union find concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "148",
+    "title": "Check if path exists",
+    "difficulty": "Easy",
+    "topics": [
+      "Graph",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the check if path exists problem efficiently. This is a easy level problem that requires understanding of graph, bfs concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "149",
+    "title": "Count connected components",
+    "difficulty": "Easy",
+    "topics": [
+      "Graph",
+      "DFS"
+    ],
+    "statement": {
+      "description": "Solve the count connected components problem efficiently. This is a easy level problem that requires understanding of graph, dfs concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "150",
+    "title": "Find center of star graph",
+    "difficulty": "Easy",
+    "topics": [
+      "Graph",
+      "Union Find"
+    ],
+    "statement": {
+      "description": "Solve the find center of star graph problem efficiently. This is a easy level problem that requires understanding of graph, union find concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "151",
+    "title": "Valid graph tree",
+    "difficulty": "Easy",
+    "topics": [
+      "Graph",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the valid graph tree problem efficiently. This is a easy level problem that requires understanding of graph, bfs concepts.",
+      "samples": [
+        {
+          "input": "[3,9,20,null,null,15,7]",
+          "output": "3",
+          "explanation": "The maximum depth is 3."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "152",
+    "title": "Clone graph",
+    "difficulty": "Easy",
+    "topics": [
+      "Graph",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the clone graph problem efficiently. This is a easy level problem that requires understanding of graph, bfs concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "153",
+    "title": "Find town judge",
+    "difficulty": "Easy",
+    "topics": [
+      "Graph",
+      "Union Find"
+    ],
+    "statement": {
+      "description": "Solve the find town judge problem efficiently. This is a easy level problem that requires understanding of graph, union find concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "154",
+    "title": "Keys and rooms",
+    "difficulty": "Easy",
+    "topics": [
+      "Graph",
+      "Topological Sort"
+    ],
+    "statement": {
+      "description": "Solve the keys and rooms problem efficiently. This is a easy level problem that requires understanding of graph, topological sort concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "155",
+    "title": "Flower planting with no adjacent",
+    "difficulty": "Easy",
+    "topics": [
+      "Graph",
+      "Topological Sort"
+    ],
+    "statement": {
+      "description": "Solve the flower planting with no adjacent problem efficiently. This is a easy level problem that requires understanding of graph, topological sort concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "156",
+    "title": "Course schedule",
+    "difficulty": "Medium",
+    "topics": [
+      "Graph",
+      "Union Find"
+    ],
+    "statement": {
+      "description": "Solve the course schedule problem efficiently. This is a medium level problem that requires understanding of graph, union find concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "157",
+    "title": "Number of islands",
+    "difficulty": "Medium",
+    "topics": [
+      "Graph",
+      "DFS"
+    ],
+    "statement": {
+      "description": "Solve the number of islands problem efficiently. This is a medium level problem that requires understanding of graph, dfs concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "158",
+    "title": "Surrounded regions",
+    "difficulty": "Medium",
+    "topics": [
+      "Graph",
+      "Union Find"
+    ],
+    "statement": {
+      "description": "Solve the surrounded regions problem efficiently. This is a medium level problem that requires understanding of graph, union find concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "159",
+    "title": "Pacific Atlantic water flow",
+    "difficulty": "Medium",
+    "topics": [
+      "Graph",
+      "Topological Sort"
+    ],
+    "statement": {
+      "description": "Solve the pacific atlantic water flow problem efficiently. This is a medium level problem that requires understanding of graph, topological sort concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "160",
+    "title": "Word ladder",
+    "difficulty": "Medium",
+    "topics": [
+      "Graph",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the word ladder problem efficiently. This is a medium level problem that requires understanding of graph, bfs concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "161",
+    "title": "Minimum spanning tree",
+    "difficulty": "Medium",
+    "topics": [
+      "Graph",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the minimum spanning tree problem efficiently. This is a medium level problem that requires understanding of graph, bfs concepts.",
+      "samples": [
+        {
+          "input": "[3,9,20,null,null,15,7]",
+          "output": "3",
+          "explanation": "The maximum depth is 3."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "162",
+    "title": "Detect cycle in directed graph",
+    "difficulty": "Medium",
+    "topics": [
+      "Graph",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the detect cycle in directed graph problem efficiently. This is a medium level problem that requires understanding of graph, bfs concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "163",
+    "title": "Topological sorting",
+    "difficulty": "Medium",
+    "topics": [
+      "Graph",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the topological sorting problem efficiently. This is a medium level problem that requires understanding of graph, bfs concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "164",
+    "title": "Shortest path in binary matrix",
+    "difficulty": "Medium",
+    "topics": [
+      "Graph",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the shortest path in binary matrix problem efficiently. This is a medium level problem that requires understanding of graph, bfs concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "165",
+    "title": "Network delay time",
+    "difficulty": "Medium",
+    "topics": [
+      "Graph",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the network delay time problem efficiently. This is a medium level problem that requires understanding of graph, bfs concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "166",
+    "title": "Word ladder II",
+    "difficulty": "Hard",
+    "topics": [
+      "Graph",
+      "DFS"
+    ],
+    "statement": {
+      "description": "Solve the word ladder ii problem efficiently. This is a hard level problem that requires understanding of graph, dfs concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "167",
+    "title": "Alien dictionary",
+    "difficulty": "Hard",
+    "topics": [
+      "Graph",
+      "Union Find"
+    ],
+    "statement": {
+      "description": "Solve the alien dictionary problem efficiently. This is a hard level problem that requires understanding of graph, union find concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "168",
+    "title": "Critical connections",
+    "difficulty": "Hard",
+    "topics": [
+      "Graph",
+      "DFS"
+    ],
+    "statement": {
+      "description": "Solve the critical connections problem efficiently. This is a hard level problem that requires understanding of graph, dfs concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "169",
+    "title": "Minimum cost to make connected",
+    "difficulty": "Hard",
+    "topics": [
+      "Graph",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the minimum cost to make connected problem efficiently. This is a hard level problem that requires understanding of graph, bfs concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "170",
+    "title": "Shortest path visiting all nodes",
+    "difficulty": "Hard",
+    "topics": [
+      "Graph",
+      "Union Find"
+    ],
+    "statement": {
+      "description": "Solve the shortest path visiting all nodes problem efficiently. This is a hard level problem that requires understanding of graph, union find concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "171",
+    "title": "Bus routes",
+    "difficulty": "Hard",
+    "topics": [
+      "Graph",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the bus routes problem efficiently. This is a hard level problem that requires understanding of graph, bfs concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "172",
+    "title": "Swim in rising water",
+    "difficulty": "Hard",
+    "topics": [
+      "Graph",
+      "DFS"
+    ],
+    "statement": {
+      "description": "Solve the swim in rising water problem efficiently. This is a hard level problem that requires understanding of graph, dfs concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "173",
+    "title": "Sliding puzzle",
+    "difficulty": "Hard",
+    "topics": [
+      "Graph",
+      "Topological Sort"
+    ],
+    "statement": {
+      "description": "Solve the sliding puzzle problem efficiently. This is a hard level problem that requires understanding of graph, topological sort concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "174",
+    "title": "Cracking the safe",
+    "difficulty": "Hard",
+    "topics": [
+      "Graph",
+      "Topological Sort"
+    ],
+    "statement": {
+      "description": "Solve the cracking the safe problem efficiently. This is a hard level problem that requires understanding of graph, topological sort concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "175",
+    "title": "Similar string groups",
+    "difficulty": "Hard",
+    "topics": [
+      "Graph",
+      "BFS"
+    ],
+    "statement": {
+      "description": "Solve the similar string groups problem efficiently. This is a hard level problem that requires understanding of graph, bfs concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "176",
+    "title": "Two sum using hash table",
+    "difficulty": "Easy",
+    "topics": [
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the two sum using hash table problem efficiently. This is a easy level problem that requires understanding of hash table concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "177",
+    "title": "Contains duplicate",
+    "difficulty": "Easy",
+    "topics": [
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the contains duplicate problem efficiently. This is a easy level problem that requires understanding of hash table concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "178",
+    "title": "Single number",
+    "difficulty": "Easy",
+    "topics": [
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the single number problem efficiently. This is a easy level problem that requires understanding of hash table concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "179",
+    "title": "Happy number",
+    "difficulty": "Easy",
+    "topics": [
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the happy number problem efficiently. This is a easy level problem that requires understanding of hash table concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "180",
+    "title": "Isomorphic strings",
+    "difficulty": "Easy",
+    "topics": [
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the isomorphic strings problem efficiently. This is a easy level problem that requires understanding of hash table concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "181",
+    "title": "Group anagrams",
+    "difficulty": "Medium",
+    "topics": [
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the group anagrams problem efficiently. This is a medium level problem that requires understanding of hash table concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "182",
+    "title": "Top K frequent elements",
+    "difficulty": "Medium",
+    "topics": [
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the top k frequent elements problem efficiently. This is a medium level problem that requires understanding of hash table concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "183",
+    "title": "Subarray sum equals K",
+    "difficulty": "Medium",
+    "topics": [
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the subarray sum equals k problem efficiently. This is a medium level problem that requires understanding of hash table concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "184",
+    "title": "4Sum problem",
+    "difficulty": "Medium",
+    "topics": [
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the 4sum problem problem efficiently. This is a medium level problem that requires understanding of hash table concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "185",
+    "title": "Find all anagrams",
+    "difficulty": "Medium",
+    "topics": [
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the find all anagrams problem efficiently. This is a medium level problem that requires understanding of hash table concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "186",
+    "title": "First missing positive",
+    "difficulty": "Hard",
+    "topics": [
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the first missing positive problem efficiently. This is a hard level problem that requires understanding of hash table concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "187",
+    "title": "Longest consecutive sequence",
+    "difficulty": "Hard",
+    "topics": [
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the longest consecutive sequence problem efficiently. This is a hard level problem that requires understanding of hash table concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "188",
+    "title": "Max points on a line",
+    "difficulty": "Hard",
+    "topics": [
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the max points on a line problem efficiently. This is a hard level problem that requires understanding of hash table concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "189",
+    "title": "Word pattern II",
+    "difficulty": "Hard",
+    "topics": [
+      "Hash Table"
+    ],
+    "statement": {
+      "description": "Solve the word pattern ii problem efficiently. This is a hard level problem that requires understanding of hash table concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "190",
+    "title": "Palindrome number",
+    "difficulty": "Easy",
+    "topics": [
+      "Math"
+    ],
+    "statement": {
+      "description": "Solve the palindrome number problem efficiently. This is a easy level problem that requires understanding of math concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "191",
+    "title": "Roman to integer",
+    "difficulty": "Easy",
+    "topics": [
+      "Math"
+    ],
+    "statement": {
+      "description": "Solve the roman to integer problem efficiently. This is a easy level problem that requires understanding of math concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "192",
+    "title": "Plus one",
+    "difficulty": "Easy",
+    "topics": [
+      "Math"
+    ],
+    "statement": {
+      "description": "Solve the plus one problem efficiently. This is a easy level problem that requires understanding of math concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "193",
+    "title": "Sqrt(x)",
+    "difficulty": "Easy",
+    "topics": [
+      "Math"
+    ],
+    "statement": {
+      "description": "Solve the sqrt(x) problem efficiently. This is a easy level problem that requires understanding of math concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "194",
+    "title": "Power of two",
+    "difficulty": "Easy",
+    "topics": [
+      "Math"
+    ],
+    "statement": {
+      "description": "Solve the power of two problem efficiently. This is a easy level problem that requires understanding of math concepts.",
+      "samples": [
+        {
+          "input": "[1,2,3,4,5]",
+          "output": "15",
+          "explanation": "Example calculation based on the problem."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^4",
+        "-10^3 <= values <= 10^3",
+        "Time complexity: O(n) expected",
+        "Space complexity: O(1) preferred"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "195",
+    "title": "Integer to Roman",
+    "difficulty": "Medium",
+    "topics": [
+      "Math"
+    ],
+    "statement": {
+      "description": "Solve the integer to roman problem efficiently. This is a medium level problem that requires understanding of math concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "196",
+    "title": "Pow(x, n)",
+    "difficulty": "Medium",
+    "topics": [
+      "Math"
+    ],
+    "statement": {
+      "description": "Solve the pow(x, n) problem efficiently. This is a medium level problem that requires understanding of math concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "197",
+    "title": "Divide two integers",
+    "difficulty": "Medium",
+    "topics": [
+      "Math"
+    ],
+    "statement": {
+      "description": "Solve the divide two integers problem efficiently. This is a medium level problem that requires understanding of math concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "198",
+    "title": "Fraction to decimal",
+    "difficulty": "Medium",
+    "topics": [
+      "Math"
+    ],
+    "statement": {
+      "description": "Solve the fraction to decimal problem efficiently. This is a medium level problem that requires understanding of math concepts.",
+      "samples": [
+        {
+          "input": "[[1,2],[3,4]]",
+          "output": "10",
+          "explanation": "Process the 2D input according to problem requirements."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^5",
+        "-10^6 <= values <= 10^6",
+        "Time complexity: O(n log n) or better",
+        "Space complexity: O(n) acceptable"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "199",
+    "title": "Basic calculator III",
+    "difficulty": "Hard",
+    "topics": [
+      "Math"
+    ],
+    "statement": {
+      "description": "Solve the basic calculator iii problem efficiently. This is a hard level problem that requires understanding of math concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  },
+  {
+    "id": "200",
+    "title": "Max points on line",
+    "difficulty": "Hard",
+    "topics": [
+      "Math"
+    ],
+    "statement": {
+      "description": "Solve the max points on line problem efficiently. This is a hard level problem that requires understanding of math concepts.",
+      "samples": [
+        {
+          "input": "Complex input structure",
+          "output": "Optimized result",
+          "explanation": "Advanced algorithm implementation required."
+        }
+      ],
+      "constraints": [
+        "1 <= n <= 10^6",
+        "-10^9 <= values <= 10^9",
+        "Time complexity: O(n) or O(n log n) required",
+        "Advanced algorithms and optimizations needed"
+      ]
+    },
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp"
+    ]
+  }
+]

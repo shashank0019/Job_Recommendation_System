@@ -1,0 +1,145 @@
+[
+  {
+    "id": 1,
+    "title": "Senior Software Engineer",
+    "company": "TechCorp",
+    "location": "San Francisco, CA",
+    "description": "Join our team to build scalable web applications using modern technologies. You'll work on exciting projects that impact millions of users.",
+    "requirements": "5+ years of experience with JavaScript, React, Node.js. Experience with AWS and microservices architecture.",
+    "salary": "$120,000 - $180,000",
+    "type": "Full-time",
+    "posted_date": "2025-11-01T10:00:00",
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "title": "Data Scientist",
+    "company": "DataTech Solutions",
+    "location": "New York, NY",
+    "description": "Analyze large datasets to extract business insights and build machine learning models. Work with cross-functional teams to drive data-driven decisions.",
+    "requirements": "Master's degree in Statistics, Computer Science, or related field. Experience with Python, R, SQL, and machine learning frameworks.",
+    "salary": "$100,000 - $150,000",
+    "type": "Full-time",
+    "posted_date": "2025-11-01T09:30:00",
+    "status": "active"
+  },
+  {
+    "id": 3,
+    "title": "Frontend Developer",
+    "company": "WebSolutions Inc",
+    "location": "Remote",
+    "description": "Create beautiful and responsive user interfaces. Work with designers and backend developers to deliver exceptional user experiences.",
+    "requirements": "3+ years of experience with HTML, CSS, JavaScript, React or Vue.js. Experience with responsive design and modern build tools.",
+    "salary": "$80,000 - $120,000",
+    "type": "Full-time",
+    "posted_date": "2025-11-01T08:15:00",
+    "status": "active"
+  },
+  {
+    "id": 4,
+    "title": "Product Manager",
+    "company": "InnovateCorp",
+    "location": "Seattle, WA",
+    "description": "Lead product strategy and roadmap for our flagship products. Collaborate with engineering, design, and marketing teams.",
+    "requirements": "5+ years of product management experience. Strong analytical skills and experience with agile methodologies.",
+    "salary": "$130,000 - $190,000",
+    "type": "Full-time",
+    "posted_date": "2025-11-01T07:45:00",
+    "status": "active"
+  },
+  {
+    "id": 5,
+    "title": "DevOps Engineer",
+    "company": "CloudTech",
+    "location": "Austin, TX",
+    "description": "Manage cloud infrastructure and CI/CD pipelines. Ensure high availability and scalability of our platform.",
+    "requirements": "Experience with AWS/Azure, Docker, Kubernetes, and infrastructure as code. Strong scripting skills in Python or Bash.",
+    "salary": "$110,000 - $160,000",
+    "type": "Full-time",
+    "posted_date": "2025-11-01T06:30:00",
+    "status": "active"
+  },
+  {
+    "id": 6,
+    "title": "developer",
+    "company": "Samsung R&D",
+    "location": "Bengaluru, India",
+    "description": "v",
+    "requirements": [
+      "v"
+    ],
+    "salary": "",
+    "type": "Full-time",
+    "posted_date": "2025-11-01T15:16:04.074598",
+    "status": "active"
+  },
+  {
+    "id": 7,
+    "title": "fw",
+    "company": "Gwfb",
+    "location": "Bengaluru, India",
+    "description": "c",
+    "requirements": [
+      "sc"
+    ],
+    "salary": "Competitive",
+    "type": "full-time",
+    "posted_date": "2025-11-02T08:42:02.248310",
+    "status": "active"
+  },
+  {
+    "id": "1762207877",
+    "title": "developer",
+    "company": "aev",
+    "location": "Bengaluru, India",
+    "description": "nothn",
+    "salary": "Negotiable",
+    "type": "full-time",
+    "posted_date": "2025-11-04",
+    "status": "active"
+  },
+  {
+    "id": "1762208311",
+    "title": "Test Job",
+    "company": "Test Company",
+    "location": "Test Location",
+    "description": "Test Description",
+    "salary": "Negotiable",
+    "type": "full-time",
+    "posted_date": "2025-11-04",
+    "status": "active"
+  },
+  {
+    "id": "1762209023",
+    "title": "engineer",
+    "company": "Samsung R&D",
+    "location": "Bengaluru, India",
+    "description": "developer",
+    "salary": "Negotiable",
+    "type": "full-time",
+    "posted_date": "2025-11-04",
+    "status": "active"
+  },
+  {
+    "id": "1762209078",
+    "title": "Test Job",
+    "company": "Test Company",
+    "location": "Test Location",
+    "description": "Test Description",
+    "salary": "Negotiable",
+    "type": "full-time",
+    "posted_date": "2025-11-04",
+    "status": "active"
+  },
+  {
+    "id": "1762209151",
+    "title": "Test Job",
+    "company": "Test Company",
+    "location": "Test Location",
+    "description": "Test Description",
+    "salary": "Negotiable",
+    "type": "full-time",
+    "posted_date": "2025-11-04",
+    "status": "active"
+  }
+]

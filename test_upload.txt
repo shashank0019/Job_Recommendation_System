@@ -1,0 +1,4 @@
+Python developer with 3 years of experience
+Skills: Python, Django, React, JavaScript, PostgreSQL, Docker
+Education: Computer Science degree
+Experience: Full-stack development, API design, database optimization

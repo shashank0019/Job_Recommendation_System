@@ -1,0 +1,323 @@
+#!/usr/bin/env python3
+"""
+Simple Job Posting API Server
+Focused only on job posting functionality for the frontend
+"""
+
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+import json
+import os
+from datetime import datetime
+
+app = Flask(__name__)
+
+# Configure CORS for all origins and methods
+CORS(app, resources={
+    r"/*": {
+        "origins": ["http://localhost:5173", "http://127.0.0.1:5173", 
+                   "http://localhost:5174", "http://127.0.0.1:5174", 
+                   "http://localhost:3000", "http://127.0.0.1:3000"],
+        "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+        "allow_headers": ["Content-Type", "Authorization", "Origin", "Accept"]
+    }
+})
+
+# In-memory job storage (for demo purposes)
+JOBS_STORAGE = []
+
+def load_sample_jobs():
+    """Load some sample jobs"""
+    global JOBS_STORAGE
+    
+    # Load from file if exists
+    jobs_file = os.path.join('data', 'posted_jobs.json')
+    if os.path.exists(jobs_file):
+        try:
+            with open(jobs_file, 'r', encoding='utf-8') as f:
+                JOBS_STORAGE = json.load(f)
+                print(f"✅ Loaded {len(JOBS_STORAGE)} jobs from file")
+                return
+        except Exception as e:
+            print(f"⚠️ Failed to load jobs from file: {e}")
+    
+    # Create sample jobs
+    JOBS_STORAGE = [
+        {
+            'id': '1',
+            'title': 'Full Stack Developer',
+            'company': 'TechCorp Solutions',
+            'location': 'Remote / New York, NY',
+            'description': 'We are seeking a talented Full Stack Developer to join our innovative team. You will work on cutting-edge web applications using modern technologies including React, Node.js, and cloud platforms.',
+            'salary': '$70,000 - $95,000',
+            'type': 'full-time',
+            'posted_date': '2024-11-02',
+            'status': 'active',
+            'requirements': ['JavaScript', 'React', 'Node.js', 'SQL', 'Git'],
+            'benefits': ['Health Insurance', 'Remote Work', 'Flexible Hours', '401k']
+        },
+        {
+            'id': '2',
+            'title': 'Frontend Developer',
+            'company': 'StartupXYZ',
+            'location': 'San Francisco, CA',
+            'description': 'Join our frontend team to build amazing user experiences. Work with React, TypeScript, and modern CSS frameworks to create responsive, accessible web applications.',
+            'salary': '$65,000 - $85,000',
+            'type': 'full-time',
+            'posted_date': '2024-11-01',
+            'status': 'active',
+            'requirements': ['React', 'TypeScript', 'HTML/CSS', 'JavaScript', 'Git'],
+            'benefits': ['Health Insurance', 'Stock Options', 'Lunch Provided', 'Learning Budget']
+        },
+        {
+            'id': '3',
+            'title': 'Python Backend Developer',
+            'company': 'Data Analytics Inc',
+            'location': 'Austin, TX',
+            'description': 'Develop robust backend services using Python, Django, and PostgreSQL. Work on data processing pipelines and API development for our analytics platform.',
+            'salary': '$75,000 - $100,000',
+            'type': 'full-time',
+            'posted_date': '2024-10-30',
+            'status': 'active',
+            'requirements': ['Python', 'Django', 'PostgreSQL', 'REST APIs', 'Docker'],
+            'benefits': ['Health Insurance', 'Remote Work', 'Professional Development', 'Bonus']
+        },
+        {
+            'id': '4',
+            'title': 'DevOps Engineer',
+            'company': 'Cloud Systems Ltd',
+            'location': 'Seattle, WA',
+            'description': 'Manage and optimize our cloud infrastructure. Experience with AWS, Docker, Kubernetes, and CI/CD pipelines required.',
+            'salary': '$80,000 - $110,000',
+            'type': 'full-time',
+            'posted_date': '2024-10-28',
+            'status': 'active',
+            'requirements': ['AWS', 'Docker', 'Kubernetes', 'Linux', 'Python/Bash'],
+            'benefits': ['Health Insurance', 'Stock Options', 'Remote Work', 'Conference Budget']
+        },
+        {
+            'id': '5',
+            'title': 'Data Scientist',
+            'company': 'ML Innovations',
+            'location': 'Remote',
+            'description': 'Apply machine learning techniques to solve business problems. Work with large datasets, build predictive models, and create data visualizations.',
+            'salary': '$85,000 - $120,000',
+            'type': 'full-time',
+            'posted_date': '2024-10-25',
+            'status': 'active',
+            'requirements': ['Python', 'Machine Learning', 'SQL', 'Statistics', 'Pandas/NumPy'],
+            'benefits': ['Health Insurance', 'Remote Work', 'Flexible Schedule', 'Education Reimbursement']
+        }
+    ]
+    print(f"✅ Created {len(JOBS_STORAGE)} sample jobs")
+
+def save_jobs_to_file():
+    """Save current jobs to file"""
+    try:
+        os.makedirs('data', exist_ok=True)
+        jobs_file = os.path.join('data', 'posted_jobs.json')
+        with open(jobs_file, 'w', encoding='utf-8') as f:
+            json.dump(JOBS_STORAGE, f, indent=2, ensure_ascii=False)
+    except Exception as e:
+        print(f"⚠️ Failed to save jobs to file: {e}")
+
+@app.route('/')
+def health_check():
+    """Simple health check endpoint"""
+    return jsonify({
+        'status': 'OK',
+        'message': 'Job Posting API Server is running',
+        'endpoints': {
+            'jobs': 'GET/POST /api/jobs',
+            'experiences': 'GET /api/experiences',
+            'health': 'GET /'
+        },
+        'total_jobs': len(JOBS_STORAGE)
+    })
+
+@app.route('/api/jobs', methods=['GET', 'POST', 'OPTIONS'])
+def api_jobs():
+    """Handle job posting API requests"""
+    if request.method == 'OPTIONS':
+        return jsonify({'status': 'OK'})
+    
+    if request.method == 'GET':
+        # Return list of jobs for frontend
+        try:
+            page = int(request.args.get('page', 1))
+            limit = int(request.args.get('limit', 20))
+            
+            # Calculate pagination
+            total = len(JOBS_STORAGE)
+            start_idx = (page - 1) * limit
+            end_idx = min(start_idx + limit, total)
+            
+            jobs_page = JOBS_STORAGE[start_idx:end_idx]
+            
+            print(f"📋 Serving page {page} of jobs: {len(jobs_page)} jobs (total: {total})")
+            
+            return jsonify({
+                'success': True,
+                'jobs': jobs_page,
+                'pagination': {
+                    'page': page,
+                    'limit': limit,
+                    'total': total,
+                    'pages': (total + limit - 1) // limit
+                }
+            })
+            
+        except Exception as e:
+            print(f"❌ Error fetching jobs: {e}")
+            return jsonify({
+                'success': False,
+                'error': f'Failed to fetch jobs: {str(e)}'
+            }), 500
+    
+    elif request.method == 'POST':
+        # Handle job posting creation
+        try:
+            data = request.get_json()
+            if not data:
+                return jsonify({
+                    'success': False,
+                    'error': 'No data provided'
+                }), 400
+            
+            # Validate required fields
+            required_fields = ['title', 'company', 'description']
+            for field in required_fields:
+                if not data.get(field):
+                    return jsonify({
+                        'success': False,
+                        'error': f'Missing required field: {field}'
+                    }), 400
+            
+            # Create new job posting
+            new_job = {
+                'id': str(int(datetime.utcnow().timestamp())),
+                'title': data.get('title'),
+                'company': data.get('company'),
+                'location': data.get('location', 'Not specified'),
+                'description': data.get('description'),
+                'salary': data.get('salary', 'Competitive'),
+                'type': data.get('type', 'full-time'),
+                'posted_date': datetime.utcnow().strftime('%Y-%m-%d'),
+                'status': 'active',
+                'requirements': data.get('requirements', []),
+                'benefits': data.get('benefits', [])
+            }
+            
+            # Add to storage
+            JOBS_STORAGE.append(new_job)
+            
+            # Save to file
+            save_jobs_to_file()
+            
+            print(f"✅ New job posted: {new_job['title']} at {new_job['company']}")
+            
+            return jsonify({
+                'success': True,
+                'job': new_job,
+                'message': 'Job posted successfully'
+            })
+            
+        except Exception as e:
+            print(f"❌ Error creating job: {e}")
+            return jsonify({
+                'success': False,
+                'error': f'Failed to create job posting: {str(e)}'
+            }), 500
+
+@app.route('/api/experiences', methods=['GET', 'OPTIONS'])
+def api_experiences():
+    """Get interview experiences for the frontend"""
+    if request.method == 'OPTIONS':
+        return jsonify({'status': 'OK'})
+    
+    try:
+        # Return sample experiences
+        sample_experiences = [
+            {
+                'id': '1',
+                'company': 'TechCorp Solutions',
+                'role': 'Full Stack Developer',
+                'difficulty': 'Medium',
+                'experience': 'Great technical interview with focus on React and Node.js. The team was very welcoming and explained the company culture well. They asked practical questions about debugging and system design.',
+                'date': '2024-10-15',
+                'rating': 4,
+                'location': 'Remote',
+                'interview_stages': ['Phone Screen', 'Technical Round', 'System Design', 'Cultural Fit'],
+                'tips': 'Practice coding problems and be ready to explain your thought process'
+            },
+            {
+                'id': '2', 
+                'company': 'StartupXYZ',
+                'role': 'Frontend Developer',
+                'difficulty': 'Hard',
+                'experience': 'Challenging interview with live coding session. They asked me to build a React component from scratch and optimize performance. The feedback was constructive.',
+                'date': '2024-10-10',
+                'rating': 5,
+                'location': 'San Francisco, CA',
+                'interview_stages': ['Portfolio Review', 'Live Coding', 'Code Review'],
+                'tips': 'Have a strong portfolio ready and practice live coding'
+            },
+            {
+                'id': '3',
+                'company': 'Data Analytics Inc',
+                'role': 'Python Backend Developer', 
+                'difficulty': 'Medium',
+                'experience': 'Focused on Python knowledge, Django framework, and database optimization. They were interested in my experience with data processing and API design.',
+                'date': '2024-10-05',
+                'rating': 4,
+                'location': 'Austin, TX',
+                'interview_stages': ['Technical Phone Screen', 'On-site Technical', 'Manager Round'],
+                'tips': 'Know your Python frameworks well and understand database concepts'
+            },
+            {
+                'id': '4',
+                'company': 'Cloud Systems Ltd',
+                'role': 'DevOps Engineer',
+                'difficulty': 'Hard',
+                'experience': 'Deep dive into cloud architecture, Kubernetes, and CI/CD pipelines. They gave me a scenario-based problem to solve about scaling infrastructure.',
+                'date': '2024-09-28',
+                'rating': 5,
+                'location': 'Seattle, WA',
+                'interview_stages': ['Technical Screen', 'Architecture Design', 'Hands-on Lab'],
+                'tips': 'Be ready to design solutions and explain trade-offs'
+            }
+        ]
+        
+        print(f"📋 Serving {len(sample_experiences)} interview experiences")
+        
+        return jsonify({
+            'success': True,
+            'experiences': sample_experiences,
+            'total': len(sample_experiences)
+        })
+        
+    except Exception as e:
+        print(f"❌ Error fetching experiences: {e}")
+        return jsonify({
+            'success': False,
+            'error': f'Failed to fetch experiences: {str(e)}'
+        }), 500
+
+if __name__ == '__main__':
+    print("Starting Job Posting API Server...")
+    
+    # Load sample jobs
+    load_sample_jobs()
+    
+    print("Server starting on http://localhost:5000")
+    print("Available endpoints:")
+    print("   GET / - Health check")
+    print("   GET/POST /api/jobs - Job listings")
+    print("   GET /api/experiences - Interview experiences")
+    print()
+    
+    try:
+        app.run(host='0.0.0.0', port=5000, debug=False)
+    except Exception as e:
+        print(f"Server failed to start: {e}")
+        print("Make sure port 5000 is available")

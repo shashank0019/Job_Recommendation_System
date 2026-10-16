@@ -1,0 +1,118 @@
+#!/usr/bin/env python3
+"""
+Job Posting System Startup Script
+Ensures the job posting server starts correctly
+"""
+
+import os
+import sys
+import json
+import subprocess
+import time
+
+def check_dependencies():
+    """Check if required packages are installed"""
+    try:
+        import flask
+        import flask_cors
+        print("✓ Dependencies: flask, flask_cors")
+        return True
+    except ImportError as e:
+        print(f"✗ Missing dependency: {e}")
+        print("Install with: pip install flask flask-cors")
+        return False
+
+def check_data_file():
+    """Check if job data file exists"""
+    data_file = os.path.join('data', 'posted_jobs.json')
+    if os.path.exists(data_file):
+        try:
+            with open(data_file, 'r') as f:
+                jobs = json.load(f)
+            print(f"✓ Data file: {len(jobs)} jobs loaded")
+            return True
+        except Exception as e:
+            print(f"✗ Data file error: {e}")
+            return False
+    else:
+        print("✗ Data file not found: data/posted_jobs.json")
+        return False
+
+def start_server():
+    """Start the job posting server"""
+    server_file = 'job_api_simple.py'
+    
+    if not os.path.exists(server_file):
+        print(f"✗ Server file not found: {server_file}")
+        return False
+    
+    print(f"✓ Starting server: {server_file}")
+    
+    try:
+        # Start the server
+        process = subprocess.Popen(
+            [sys.executable, server_file],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            universal_newlines=True,
+            bufsize=1
+        )
+        
+        # Wait a moment for startup
+        time.sleep(3)
+        
+        # Check if process is running
+        if process.poll() is None:
+            print("✓ Server started successfully")
+            print("✓ Running on http://localhost:5000")
+            print("✓ API endpoints available:")
+            print("  - GET /api/jobs")
+            print("  - POST /api/jobs")  
+            print("  - GET /api/experiences")
+            print("\nPress Ctrl+C to stop the server")
+            
+            # Keep server running and show output
+            try:
+                for line in process.stdout:
+                    print(line.strip())
+            except KeyboardInterrupt:
+                print("\nStopping server...")
+                process.terminate()
+                process.wait()
+                print("✓ Server stopped")
+                
+        else:
+            print("✗ Server failed to start")
+            output = process.stdout.read()
+            if output:
+                print(f"Error output: {output}")
+            return False
+            
+    except Exception as e:
+        print(f"✗ Error starting server: {e}")
+        return False
+    
+    return True
+
+def main():
+    """Main startup sequence"""
+    print("Job Posting System Startup")
+    print("=" * 30)
+    
+    # Check system requirements
+    if not check_dependencies():
+        return False
+        
+    if not check_data_file():
+        return False
+    
+    # Start server
+    return start_server()
+
+if __name__ == '__main__':
+    try:
+        main()
+    except KeyboardInterrupt:
+        print("\nShutdown requested")
+    except Exception as e:
+        print(f"Startup error: {e}")

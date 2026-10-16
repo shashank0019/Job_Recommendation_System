@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clear Problems Cache</title>
+</head>
+<body>
+    <h1>Clear Problems Cache</h1>
+    <button onclick="clearCache()">Clear All Problems Cache</button>
+    <div id="result"></div>
+
+    <script>
+        function clearCache() {
+            // Clear all problems-related localStorage
+            localStorage.removeItem('comprehensive_problems');
+            localStorage.removeItem('problems_200');
+            localStorage.removeItem('local_problems');
+            
+            // Clear any other problem caches
+            const keys = Object.keys(localStorage);
+            keys.forEach(key => {
+                if (key.includes('problem') || key.includes('Problem')) {
+                    localStorage.removeItem(key);
+                }
+            });
+            
+            document.getElementById('result').innerHTML = 
+                '<p style="color: green;">✅ All problems cache cleared! Refresh your Problems page to load the new 200 problems.</p>';
+        }
+    </script>
+</body>
+</html>

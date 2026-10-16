@@ -1,0 +1,69 @@
+{
+  "Programming Languages": [
+    "python",
+    "java",
+    "javascript",
+    "typescript",
+    "c++",
+    "c#",
+    "go",
+    "rust",
+    "php",
+    "ruby"
+  ],
+  "Frameworks & Libraries": [
+    "react",
+    "angular",
+    "vue",
+    "node.js",
+    "django",
+    "flask",
+    "spring",
+    "express",
+    "laravel",
+    "asp.net"
+  ],
+  "Databases": [
+    "mysql",
+    "postgresql",
+    "mongodb",
+    "redis",
+    "elasticsearch",
+    "oracle",
+    "sql server",
+    "dynamodb"
+  ],
+  "Cloud & DevOps": [
+    "aws",
+    "azure",
+    "gcp",
+    "docker",
+    "kubernetes",
+    "jenkins",
+    "git",
+    "terraform",
+    "ansible",
+    "ci/cd"
+  ],
+  "Data & AI": [
+    "machine learning",
+    "data science",
+    "tensorflow",
+    "pytorch",
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "nlp",
+    "ai"
+  ],
+  "Tools & Platforms": [
+    "jira",
+    "confluence",
+    "slack",
+    "figma",
+    "postman",
+    "swagger",
+    "kafka",
+    "rabbitmq"
+  ]
+}

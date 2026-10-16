@@ -1,0 +1,19 @@
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+frontend/node_modules/
+frontend/dist/
+
+# Large dataset files (>100MB exceeds GitHub limit)
+data/interview/hr_interview_questions_dataset.json
+data/archive (5)/
+data/unified_job_dataset.csv
+
+# Local uploads and temporary sessions
+data/uploads/
+uploads/
+interview_responses/
